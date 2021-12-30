@@ -44,3 +44,9 @@
 
   - The Vision
     - It can expand access, opportunity, social networks and mental health
+
+- [Explainer: What is the 'metaverse'?](https://www.youtube.com/watch?v=99BnZ8js1_k&ab_channel=Reuters)
+  - Metaverse is becomming the buz word
+  - Fb to focus on metaverse and branded it self as meta. Plans to become a metaverse company.
+  - Metaverse refer to online spaces which alows people to interact in a more immersive way than a traditional website though VR. It also refers to vitual environment where one is represnted by some avatar which can intract with others. It is convergance of real and physical world.
+  - Decentraland a metaverse uses blockchain and users can by clothes and land in exchange of crypto.
