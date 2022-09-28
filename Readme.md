@@ -2,6 +2,9 @@
 
 ## Program of Studies (Quarter I)
 
+- Presentation
+  - [Panaverse](https://docs.google.com/presentation/d/12C1s4UBTlR9nZNEkRE6aAuGeRA3s92jx-8nJKo9jdH4/edit?fbclid=IwAR3jsDKwDlgOL2vqgp5nVpME_N_MQgIVpkF6qqoBtOuRbGPUUgWcIYM90sE#slide=id.gf48166e210_0_2583)
+
 ### Quarter I-A: Web 3.0 and Metaverse Theory
 
 - Reading Material
@@ -53,6 +56,8 @@
 
 ### Quarter I-B: Object Oriented Programming using Typescript
 
+- Presentations
+  - [Introduction to Javascript](https://docs.google.com/presentation/d/18b2jZ1PIjhgnsrvl7LuuaZcKhzhyx26d9mV9KrtT5TE/edit#slide=id.g15a453e6c68_0_126)
 - Reading Material
   - [TypeScript is the top programming language, and our core language](https://www.helpnetsecurity.com/2022/09/20/25-most-popular-programming-languages-trends/)
   - [JavaScript is no longer the favorite programming language for developers, TypeScript is the number one programming language among developers](https://www.techradar.com/news/javascript-no-longer-the-favorite-language-among-developers)
