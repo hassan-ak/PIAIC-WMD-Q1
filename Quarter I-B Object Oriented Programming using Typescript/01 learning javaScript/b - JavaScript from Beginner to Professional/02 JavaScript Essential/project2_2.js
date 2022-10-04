@@ -1,0 +1,10 @@
+var heightIn = 72;
+var weightP = 180;
+console.log('Height in inches : ', heightIn);
+console.log('Weight in pounds : ', weightP);
+var heightC = heightIn * 2.54;
+var weightK = weightP / 2.2046;
+console.log('Height in cm : ', heightC);
+console.log('Weight in kg : ', weightK);
+var bmi = weightK / (heightC / 100) ** 2;
+console.log('BMI : ', bmi);
