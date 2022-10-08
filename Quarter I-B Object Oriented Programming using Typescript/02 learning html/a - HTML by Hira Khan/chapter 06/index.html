@@ -1,0 +1,68 @@
+<!-- Tables -->
+<!--
+  information in grid form
+  tags -- table,th,td,tr
+  attributes -- scope (th),colspan,rowspan, width, cellpading, cellspacing, border, bgcolor
+  split long tables --- thead, tbody, tfoot
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Chapter 06</title>
+  </head>
+  <body>
+    <h1>Table</h1>
+    <table
+      width="500"
+      border="2"
+      bgcolor="lightgrey"
+      cellpadding="10"
+      cellspacing="5"
+    >
+      <thead>
+        <tr>
+          <th>Products</th>
+          <th>Original Price</th>
+          <th>Discounted Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Shirt</th>
+          <td>2000</td>
+          <td>1750</td>
+        </tr>
+        <tr>
+          <th>Trouser</th>
+          <td colspan="2">3000</td>
+        </tr>
+        <tr>
+          <th>Shoes</th>
+          <td>4000</td>
+          <td rowspan="2">3000</td>
+        </tr>
+        <tr>
+          <th>Socks</th>
+          <td>5000</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Note: Discount currently not valid</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
+
+<!-- Summary -->
+<!-- The <table> element is used to create tables in a web page. -->
+<!-- Tables are created row by row. The <tr> element is used to create each row. -->
+<!-- Cells in a row are created cell by cell. The <td> element is used to create each cell. In case it's a header row, the <th> element is used to create each header cell. -->
+<!-- The rowspan and colspan attributes may be used to make cells span across rows or columns in the table. -->
+<!-- To create long tables, the <thead>, <tbody>, and <tfoot> elements may be used to split the table. -->
