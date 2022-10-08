@@ -1,0 +1,57 @@
+<!-- Links -->
+<!-- help to link one page to another -->
+<!-- anchor
+relative
+absolute -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Chapter 04</title>
+  </head>
+  <body>
+    <p>Writing a link</p>
+    <a href="https://www.piaic.org/">PIAIC Website</a>
+    <hr />
+    <p>Linking to other website</p>
+    <a href="https://www.youtube.com/">Youtube</a>
+    <hr />
+    <p>Directory Structure</p>
+    <a href="./Online Store/index.html">Online Store</a>
+    <hr />
+    <p>Email Links</p>
+    <a href="mailto:abc.gmail.com">Send mail to PIAIC</a>
+    <hr />
+    <p>Open link in new window</p>
+    <a href="./Online Store/index.html" target="_blank"
+      >Online Store in new window</a
+    >
+    <hr />
+    <p>Link to same page</p>
+    <a href="./example.html">Same Page Link example</a>
+    <hr />
+  </body>
+</html>
+
+<!-- Summary -->
+<!-- To create hyperlinks in HTML, we use anchor tags. <a> </a>  -->
+<!-- The text between the opening <a> tag and the closing </a> tag is called the Link Text.  -->
+<!-- 
+  There are two basic choices when it comes to the selection of URLS. 
+- Absolute URL - Usually used to navigate to another website, 
+- Relative URL - Usually used to navigate within the same website,  
+-->
+<!-- Anchor elements always carry an attribute called href (Hypertext Reference). The value of the href attribute is the URL that you want people to go to when they click on the link text (The value of the href attribute becomes the link).  -->
+<!-- 
+  Either Relative or Absolute URLs may be used inside the href attribute. 
+- When linking to a different website, the value of the href attribute will be the full web address for the website (including the domain name). This is the Absolute URL. 
+- When you're linking to other pages within the same site, you can use Relative URLs. Relative URLs are like a short-hand version of Absolute URLs because there's NO NEED to specify the domain name.
+- Relative URLs help when building a site on your computer because you can create links between pages without having to setup your domain name or hosting. 
+-->
+<!-- 
+  To open a link in a new browser window or tab, you can use the target attribute in the opening <a> tag. The value of the target attribute should be "_blank". 
+- The default value of the target attribute is "self", which means the link will be opened in the current window or tab.
+  -->
