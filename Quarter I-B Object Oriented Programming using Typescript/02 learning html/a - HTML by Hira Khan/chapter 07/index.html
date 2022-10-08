@@ -1,0 +1,155 @@
+<!-- Form -->
+<!-- 
+Form Control
+  Adding text
+    Text Input - Single line
+    password input
+    Text area Multiline
+  Making Choices
+    Radio Button
+    Check Box
+    Drop Down Boxes
+  Submitting form
+    Radio buttons
+    Image Buttons
+  Uploading files
+    File upload
+-->
+<!-- 
+How form work 
+  Fill form and submit
+  values sent to server (name value pair)
+  server processes information
+  server respond back
+-->
+<!-- 
+form structure 
+  form element
+    action attribute
+    method attribute (get,post)
+-->
+<!-- Labelling form control -->
+<!-- Group from elemnt -->
+<!-- Form Validation -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Chapter 07</title>
+  </head>
+
+  <body>
+    <h1>SignUp Form</h1>
+    <form action="https://example.com/login.php" method="POST">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <p>
+          First Name:
+          <input
+            type="text"
+            name="firstName"
+            size="15"
+            maxlength="30"
+            required
+          />
+          Last Name:
+          <input type="text" name="lastName" size="15" maxlength="30" />
+        </p>
+        <p>
+          Gender:
+          <input type="radio" name="gender" value="m" id="male" />
+          <label for="male">Male</label>
+          <label><input type="radio" name="gender" value="f" />Female</label>
+        </p>
+        <p>
+          Date of Birth:
+          <input type="date" name="dob" />
+        </p>
+        <p>
+          Enter your email:
+          <input type="email" name="email" />
+        </p>
+        <p>
+          Enter your website:
+          <input type="url" name="profile" />
+        </p>
+        <p>
+          Nationality:
+          <select name="nationality" multiple>
+            <option value="pak">Pakistan</option>
+            <option value="us">USA</option>
+            <option value="can">Canada</option>
+            <option value="eng">England</option>
+            <option value="chi">China</option>
+          </select>
+        </p>
+        <p>
+          Coutnry of residence:
+          <select name="residence">
+            <option value="pak">Pakistan</option>
+            <option value="us">USA</option>
+            <option value="can">Canada</option>
+            <option value="eng">England</option>
+            <option value="chi">China</option>
+          </select>
+        </p>
+      </fieldset>
+      <p>
+        Password:
+        <input type="password" name="password" size="15" maxlength="30" />
+      </p>
+      <p>
+        Re-enter Password:
+        <input type="password" name="password" size="15" maxlength="30" />
+      </p>
+      <p>
+        Interests:
+        <input type="checkbox" name="interests" value="men" />Men's Clothing
+        <input type="checkbox" name="interests" value="women" />Women's Clothing
+        <input type="checkbox" name="interests" value="acc" />Accessories
+        <input type="checkbox" name="interests" value="elec" />Electronics
+      </p>
+      <p>
+        Comments:
+        <textarea name="comments" rows="4" cols="30">
+          Enter your comments
+        </textarea>
+      </p>
+      <p>Upload your picture:</p>
+      <input type="file" name="dp" />
+      <br />
+      <input type="submit" value="upload" />
+      <br /><br />
+      <input type="submit" />
+      <br /><br />
+      <input type="image" src="../chapter 05/flag.jpg" width="150" />
+      <input type="hidden" name="source" value="login-Page" />
+    </form>
+  </body>
+</html>
+
+<!-- Summary -->
+<!-- 
+Form controls live inside a <form> element. This element usually carries the following attributes:
+  - Action attribute - The <form> element always carries the action attribute. It's value is the URL of the page that will receive the information when the form is submitted. 
+  - Method attribute - The form can be sent using one of two methods: GET or POST.
+-->
+<!-- 
+GET - With the GET method, the values from the form are added to the end of the URL specified in the action attribute. The following are further details about the GET method: 
+  - The length of a URL is limited (2,048 characters) 
+  - Never use GET to send sensitive data (data will be visible in the URL) 
+  - GET method is better for non-secure data, like query strings in Google 
+  - If the Method attribute is not used, the form data will be sent using the GET method. 
+  - Useful for form submissions where a user wants to bookmark the result.
+-->
+<!-- 
+POST - With the POST method,
+- Always use POST If the form data contains sensitive or personal information (the POST method does not display the submitted data in the page address field) 
+- POST has no size limitations and can be used to send large amounts of data 
+- Form submission with POST can not be bookmarked
+-->
+<!-- Data from a form is sent as namelvalue pairs  -->
+<!-- Form controls may be used to collect data from users. Each form control is given a name, and the text the user types in or the values of the options they select are sent to the server. -->
