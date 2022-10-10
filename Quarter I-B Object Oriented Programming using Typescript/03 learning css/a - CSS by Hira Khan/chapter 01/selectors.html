@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Chapter 01</title>
+    <style>
+      * {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      h2 {
+        color: navajowhite;
+      }
+      .aic,
+      .bcc,
+      .cnc,
+      .iot {
+        font-size: x-small;
+      }
+      #heading {
+        color: darksalmon;
+      }
+      p > a {
+        color: red;
+      }
+      div li {
+        color: yellowgreen;
+        background-color: black;
+      }
+      h1 + p {
+        background-color: aqua;
+      }
+      h2 ~ ol {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1 id="heading">Selectors</h1>
+      <p class="info">PIAIC offers the following courses</p>
+      <div>
+        <ol>
+          <li class="aic">AIC</li>
+          <li class="bcc">BCC</li>
+          <li class="cnc">CNC</li>
+          <li class="iot">IOT</li>
+        </ol>
+      </div>
+      <p>Website <a class="info" href="https://www.piaic.org/">PIAIC</a></p>
+    </div>
+    <hr />
+    <h2>Types of selector</h2>
+    <ol>
+      <li>universal selector (*)</li>
+      <li>type selector (h1)</li>
+      <li>class selector (.)</li>
+      <li>id selector (#)</li>
+      <li>child selector (>)</li>
+      <li>Descendant selector (&lt;-->)</li>
+      <li>Adjacent sibling selector (+)</li>
+      <li>Genral sibling selector (~)</li>
+    </ol>
+    <ol>
+      <li>test</li>
+    </ol>
+    <hr />
+  </body>
+</html>
