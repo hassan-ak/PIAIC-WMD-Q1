@@ -97,6 +97,8 @@
 - Practice Projects
   - [Design Patterns in TypeScript Part 1](https://refactoring.guru/design-patterns/typescript)
     - Abstract Factory, Factory Method, Singleton, Decorator, and Command.
+- Github Repo
+  - [Advanced TypeScript Patterns by Matt Pocock](https://github.com/total-typescript/advanced-patterns-workshop)
 
 ### Quarter I-X: Study Material for Super-Achievers: WebAssembly and AssembleScript
 
