@@ -165,3 +165,66 @@
    ```
 
 7. open `http://localhost:5001/` in the browser to check the output
+
+## Step 04
+
+1. Create and naviagte to `myUserInputProgram` directory using following commands
+
+   ```
+   mkdir myUserInputProgram
+   cd myUserInputProgram
+   ```
+
+2. Intilize an npm project using following command
+
+   ```
+   npm init
+   ```
+
+   this will create a `package.json` file with the following content
+
+   ```json
+   {
+     "name": "myuserinputprogram",
+     "version": "1.0.0",
+     "description": "",
+     "main": "index.mjs",
+     "scripts": {
+       "test": "echo \"Error: no test specified\" && exit 1"
+     },
+     "author": "Hassan Ali Khan",
+     "license": "ISC"
+   }
+   ```
+
+3. Install prompt-sync Library using following commnad
+
+   ```
+   npm install prompt-sync
+   ```
+
+4. This will update `package.json` and create a `package-lock.json` file along with `node_modules` folder. Create a `.gitignore` file with the following content
+
+   ```
+   node_modules
+   package-lock.json
+   ```
+
+5. Create `index.mjs` file with following content
+
+   ```mjs
+   //index.mjs
+   import promptSync from 'prompt-sync';
+   const prompt = promptSync();
+   var name = prompt('What is your name?');
+   console.log(name);
+   const num = prompt('Enter a number: ');
+   console.log('Your number + 4 =');
+   console.log(Number(num) + 4);
+   ```
+
+6. check output in the terminal using following command
+
+   ```
+   node index.mjs
+   ```
