@@ -6,3 +6,5 @@
 2. [Web 3.0 User Manual](https://docs.google.com/presentation/d/1FSbr9aJwO0-fmZHqWy_eHO2N_jwJLmQCy4cG8rd4ctw/edit?usp=sharing)
 
 ## Assignments
+
+1. [Web 3.0 User Manual Assignment](./assignment/Readme.md)
