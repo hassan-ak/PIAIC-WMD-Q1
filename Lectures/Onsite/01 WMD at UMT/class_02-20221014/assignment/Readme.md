@@ -30,3 +30,21 @@
 4. liquidity will be provided to an existing pool
 
 ### Part2: Create a new pool and provide liquidity
+
+1. Create a v2 liquidity
+   1. Visit [Uniswap App](https://app.uniswap.org/) and navigate to pool
+   2. open V2 liquidity from "more" drop down list and create a pair
+   3. select coins (some coin and your coin) and number of tokens
+   4. approve your coin and then supply (create pool and supply)
+2. Migrate to V3
+   1. Visit [Uniswap App](https://app.uniswap.org/) and navigate to pool
+   2. open migrate from "more" drop down list
+   3. select a v2 liquidity to migrate
+   4. set min and max price
+   5. allow LP token migration
+   6. Migrate
+3. V3 liquidity created
+   1. pool URL
+      - https://app.uniswap.org/#/pool/37770
+      - avaialble on goerli testnet
+4. You can swap your coin with others now.
