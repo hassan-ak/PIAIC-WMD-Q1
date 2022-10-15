@@ -1,0 +1,198 @@
+# Web3.0 User Manual
+
+- [Different versions of web](https://twitter.com/alexxubyte/status/1579497349490954240)
+  - Web 1.0
+    - users can only consume content
+    - static sites
+  - Web 2.0
+    - users can consume as well as create content
+    - social media apps
+  - Web 3.0
+    - users can consume, create and own content
+    - D-apps
+- [Core Ideas of Web3](https://ethereum.org/en/web3/)
+  - decentralized
+    - control is with the users and creaters rather than big giants
+  - permissionless
+    - everyone has equal access to participate in Web3, and no one gets excluded.
+  - native payments
+    - uses cryptocurrency instead of ordinary payment system
+  - trustless
+    - operates using incentives and economic mechanisms instead of relying on trusted third-parties
+- [Blockchains are trustless](https://www.preethikasireddy.com/post/what-do-we-mean-by-blockchains-are-trustless)
+  - not actullay trustless but eliminates the trusted third-party
+  - there are mechanisms in place by which all parties in the system can reach a consensus on what the canonical truth is.
+  - Power and trust is distributed (or shared) among the network’s stakeholders, rather than concentrated in a single individual or entity
+  - built on the basis of distributed trust: We are trusting everyone in aggregate.
+- What is Ethereum?
+  - launched back in 2015
+  - decentralized and open-source proof-of-stake blockchain with smart contracts functionality
+  - has variety of use cases
+  - large database of all the transactions conducted on the Ethereum Network.
+  - A database usually structures its data into tables, whereas a blockchain, as its name implies, structures its data into chunks (blocks) that are strung together.
+- What is Ether (ETH)?
+  - transactional token that facilitates operations on the Ethereum Blockchain network.
+  - cryptocurrency of the Ethereum network, "fuel" of the network.
+  - second-largest virtual currency by market capitalization
+  - has actual value.
+- Ethereum Base Units
+  - smallest unit of ether - [wei](https://gwei.io/)
+  - 10^18 wei equals one ether
+  - 10^9 wei is a gwei.
+  - Rather than saying your gas cost is 0.000000001 ether you can say 1 gwei.
+  - WEI
+    - imperceptible, digital dust.
+    - It's really only used for technical cases and writing code.
+  - GWEI (Shannon)
+    - Most commonly used for Gas (network transaction fees)
+  - PWEI (Finney)
+    - Pocket change.
+    - More tangible than a Nano but not as valuable as an Ether.
+  - ETHER (Buterin)
+    - The most common denomination.
+    - In most substantial transactions you'll think in terms of Eth.
+- Ethereum Gas Fee
+  - Gas is essential to the Ethereum network.
+  - It is the fuel that allows it to operate
+  - Gas refers to the unit that measures the amount of computational effort required to execute specific operations on the Ethereum network.
+  - each Ethereum transaction requires computational resources to execute
+  - each transaction requires a fee.
+  - refers to the fee required to conduct a transaction on Ethereum successfully.
+  - paid in ether (ETH).
+  - prices are denoted in gwei
+  - [gas tracker](https://etherscan.io/gastracker)
+- Ether Transactions
+  - will be able to process close to 1,00,000 transactions per second. At present, it can do 25 per second.
+  - The next stage is sharding,
+    - a process to reduce network congestion and increase transaction speed.
+  - Sharding will create 64 different shards so that the information of the blockchain is split up.
+- Ethereum for Applications
+  - Ethereum will completely transform applications of all shapes and sizes.
+  - due to built-in scripting language and distributed virtual machine, smart contracts can be built to carry out all sorts of functions without the need for a trusted third party or central authority.
+  - nodes can be paid for their processing power in running these decentralized apps
+  - entire decentralized autonomous organizations (DOAs) will exist in an ether economy.
+- What is a Dapp?
+  - A dapp has its backend code running on a decentralized peer-to-peer network
+  - dapp is built on a decentralized network that combines a smart contract and a frontend user interface.
+  - On Ethereum, smart contracts are accessible and transparent
+- Ethereum for DeFi
+  - Ethereum has given rise to a new constellation of “decentralized finance” or DeFi businesses and projects
+  - Essentially the cryptocurrency version of Wall Street, DeFi aims to offer people access to financial services—borrowing, lending, and trading—without the need for legacy institutions
+  - Most DeFi apps are built on the Ethereum blockchain.
+  - Ethereum has a range of potential applications beyond cryptocurrency
+- [8 DeFi Key Categories](https://blog.cryptostars.is/summary-from-how-to-defi-beginner-book-by-coingecko-23e0c001e0ad)
+  - Stablecoins
+  - Lending & Borrowing
+  - Exchanges
+  - Derivatives
+  - Fund Management
+  - Lottery
+  - Payments
+  - Insurance
+- [defipulse](https://www.defipulse.com/)
+- Ethereum for Global Trade and Commerce
+  - International trade is a $16 trillion market
+- Real Estate Asset Tokenization
+  - Real estate is the world’s most significant store of wealth
+  - Tokenization of commercial real estate transactions will reduce transaction costs from 30% to 2%
+  - entry barriers for investors from $200,000 to $100
+  - reduce the time for conducting operations from 1 month to 1 click.
+  - Asset Fractionalisation is the simple process of dividing an asset into smaller denominations so that many users can buy its partial ownership.
+  - [Real estate tokenization](https://github.com/panacloud-modern-global-apps/defi-dapps-solidity-smart-contracts/tree/main/step20_real_estate_tokenization)
+- [Pakistan and crypto](https://profit.pakistantoday.com.pk/2021/12/23/20bn-worth-of-crypto-held-by-pakistanis-report/)
+- [What is Public Key Cryptography?](https://www.cloudflare.com/en-gb/learning/ssl/how-does-public-key-encryption-work/)
+  - Public key cryptography, also known as asymmetric cryptography
+  - uses two separate keys instead of one shared one: a public key and a private key.
+  - important technology for Internet security.
+  - a method of encrypting or signing data with two different keys and making one of the keys, the public key, available for anyone to use. The other key is known as the private key.
+  - Data encrypted with the public key can only be decrypted with the private key.
+- [What is a Crypto Wallet?](https://www.investopedia.com/terms/p/private-key.asp)
+  - Crypto wallets keep your private keys – the passwords that give you access to your cryptocurrencies – safe and accessible, allowing you allow you to send, receive, and spend cryptocurrencies like Ethereum and ERC-20 Tokens.
+  - A cryptocurrency wallet consists of a set of public addresses and private keys. Anyone can deposit cryptocurrency in a public address, but funds cannot be removed from an address without the corresponding private key.
+  - Private keys represent final control and ownership of cryptocurrency.
+- [What is MetaMask?](https://decrypt.co/resources/metamask)
+  - MetaMask is a cryptocurrency wallet that enables users to access the Web 3 ecosystem of decentralized applications (dapps).
+  - It also enables users to store Ether and other ERC-20 tokens.
+  - [metamask](https://metamask.io/download/)
+- [Goerli Testnet](https://www.definitions.net/pronounce/Goerli)
+  - It is named after a train station in Berlin and is one of the largest and most active Ethereum test nets.
+- What is a Faucet?
+  - Few developers want to spend real money when testing or deploying smart contracts.
+  - That’s why testnet faucets are the ideal solution – you get free cryptocurrencies you can use to pay gas when deploying or testing smart contracts.
+  - [softbinator](https://faucet.softbinator.com/)
+  - [goerl](https://goerlifaucet.com/)
+  - [paradigm](https://faucet.paradigm.xyz)
+- What is a Etherscan?
+  - Etherscan, an Ethereum blockchain explorer, allows you to search the Ethereum blockchain for free.
+  - Through the tool, you can see records of past transactions, smart contracts, wallets, gas fees, and other information related to the Ethereum network.
+- What is Uniswap?
+  - Uniswap is the largest decentralized exchange (or DEX) operating on the Ethereum blockchain.
+  - It allows users anywhere in the world to trade crypto without an intermediary.
+  - UNI, the governance token that allows users to vote on key protocol changes.
+  - Uniswap was one of the first decentralized finance (or DeFi) applications to gain significant traction on Ethereum, launching in November 2018.
+  - Numerous other decentralized exchanges have launched (including Curve, SushiSwap, and Balancer), but Uniswap is currently the most popular by a significant margin.
+  - Uniswap pioneered the Automated Market Maker model, in which users supply Ethereum tokens to Uniswap “liquidity pools” and algorithms set market prices (as opposed to order books, which match bids and asks on a centralized exchange like Coinbase) based on supply and demand.
+  - By supplying tokens to Uniswap liquidity pools, users can earn rewards while enabling peer-to-peer trading.
+  - Anyone, anywhere, can supply tokens to liquidity pools, trade tokens, or even create and list their own tokens (using Ethereum’s ERC-20 protocol).
+- What is Binance?
+  - Binance is an online exchange where users can trade cryptocurrencies.
+  - It supports most commonly traded cryptocurrencies.
+  - Binance is a cryptocurrency exchange with the highest liquidity, and Uniswap can be considered its decentralized equivalent.
+  - Binance provides a crypto wallet for traders to store their electronic funds.
+  - The exchange also has supporting services for users to earn interest or transact using cryptocurrencies.
+  - Users can buy, sell, and trade crypto, choose options and futures trading, apply for crypto loans, earn passive income and more with a single login.
+  - These centralized products are easy-to-use and comprehend, and can be accessed using a web browser, desktop or mobile app.
+- [Uniswap vs Binance?](https://www.bloomberg.com/news/articles/2022-05-05/defi-exchange-says-it-provides-more-liquidity-than-larger-rivals)
+  - Uniswap v3 is the the largest decentralized exchange by trading volume, with more than $1.7 billion worth of assets changing hands in 24 hours, according to data from Coingecko.
+  - However, Binance is the largest centralized crypto exchange with $22.2 billion in trading volume over the same period.
+  - Coinbase, meanwhile, logged $3.1 billion.
+  - Uniswap has four fee tiers: 0.01%, 0.05%, 0.30% and 1.00%. Depending on the pair you trade, you could be charged as low as a 0.01% fee or as high as a 1% fee.
+  - Stablecoin pairs like USDC/USDT on Uniswap have usually low fees while altcoin pairs tend to have higher fees, which you can check out on Uniswap’s overview page.
+  - Binance, on the other hand, has very low trading fees starting from 0.10%.
+  - The research used a metric called market depth to compare liquidity across Uniswap v3 and the centralized exchanges.
+  - Market depth, a common method used to measure liquidity on exchanges, shows how much of one asset can be traded for another at a given price level. For an Ether/USD trading pair, a trader who executes a single $5-million trade can save about $24,000 on Uniswap v3 compared with Coinbase, according the research.
+- How to buy Ethereum in Pakistan
+  - [techjuice article](https://www.techjuice.pk/how-to-buy-ethereum-in-pakistan/)
+  - [Crypto exchanges](https://defirate.com/exchanges)
+- What is ERC-20?
+  - Ethereum Request for Comment 20 (ERC-20) is the implemented standard for fungible tokens created using the Ethereum blockchain.
+  - It is the technical standard used in many new tokens created using the Ethereum ecosystem.
+  - A fungible token is one that is interchangeable with another token—where the well-known non-fungible tokens (NFTs) are not interchangeable.
+  - It guides the creation of new tokens on the Ethereum blockchain so that they are interchangeable with other tokens used within smart contracts.
+  - Smart contracts were becoming more popular in 2015, but several issues needed to be addressed. Because anyone could make a token, many were being created. However, there wasn't a way to ensure that all of the different tokens could be created, used, or exchanged.
+  - Without a standardized methodology for tokens, every application would need its own token, and users would need to find a way to convert them back and forth between the hundreds of apps being developed.
+- [Create Your ERC20 Token](https://www.smartcontracts.tools/token-generator/create/ethereum/)
+- What are NFTs?
+  - Non-fungible tokens (NFTs) are cryptographic assets on a blockchain with unique identification codes and metadata that distinguish them from each other.
+  - Unlike cryptocurrencies, they cannot be traded or exchanged at equivalency. This differs from fungible tokens like cryptocurrencies, which are identical to each other and, therefore, can serve as a medium for commercial transactions.
+  - NFTs (non-fungible tokens) are unique cryptographic tokens that exist on a blockchain and cannot be replicated.
+  - NFTs can represent real-world items like artwork and real estate.
+  - "Tokenizing" these real-world tangible assets makes buying, selling, and trading them more efficient while reducing the probability of fraud.
+  - NFTs can also function to represent individuals' identities, property rights, and more.
+  - Collectors have sought NFTs as their value initially soared, but has since moderated.
+- [What is OpenSea?](https://earthweb.com/opensea-statistics/)
+  - The world's first and largest digital marketplace for crypto collectibles and non-fungible tokens (NFTs). Buy, sell, and discover exclusive digital items.
+  - Is the first ever decentralized NFT marketplace built on the Ethereum blockchain and is currently the largest.
+  - OpenSea is a regionalized peer-based marketplace for trading rare and unique digital assets.
+  - Whether it’s collectibles, arts, or gaming items developed on NFT (non-fungible token) technology and flow on the blockchain of Ethereum, an investor can buy, sell, and trade these on OpenSea.
+  - [opensea](https://testnets.opensea.io/)
+- What are DAI and USDC?
+  - Dai is a stablecoin cryptocurrency on the Ethereum blockchain which aims to keep its value as close to one United States dollar as possible through a system of smart contracts and the decentralized participants which those contracts incentivize to perform maintenance and governance functions.
+  - Dai and USDC (US Dollar Coin) are widely considered to be some of the safest stablecoins. Here's why. Stablecoins tout some pretty attractive benefits. As a cryptocurrency that's pegged to an external asset (and therefore stable), stablecoins are framed as the best of both worlds between traditional currency and crypto.
+  - Unlike USDC, Tether and the majority of other major stable cryptocurrencies, DAI is decentralized, which means that no centralized organization controls the supply of new DAIs in circulation.
+  - USDC and Tether have a reserve of actual US dollars, bonds and other securities that will "back up" every single unit of USDC and tether that exists, and is controlled by a centralized organization.
+- DAI – Reserves and Liquidity
+  - The situation of collateral with DAI is a bit different from USDC and relatively more complicated. DAI tokens are actually over-collateralized in the sense that for every DAI coin in existence, there’s 150% of crypto assets backing it.
+  - Compared to other stablecoins which are backed by USD, DAI is backed by collateral on the Maker platform.
+  - The collateral is deposited with MakerDAO, which accepts a wide variety of coins, including: ETH, USDC, etc.
+  - The price of DAI is maintained through smart contracts, instead of having a central organisation to keep the price steady.
+  - This makes DAI a decentralised stablecoin, where it is not being controlled by a central entity.
+- Panaverse Stablecoin: TrueBlue
+  - [Stablecoins: Everything You Need to Know](https://cryptobriefing.com/stablecoins-everything-you-need-to-know/)
+  - [Why DeFi Giants Aave, Curve May Want Their Own Stablecoins](https://www.coindesk.com/layer2/2022/08/01/why-defi-giants-aave-curve-may-want-their-own-stablecoins/)
+  - [Panaverse DAO Plan Under Development: TrueBlue Coin](https://docs.google.com/presentation/d/1ZY43Sdr4AysDZ0duy1S_XmuUh1tIlqnbk_IWVwIki2g/edit?usp=sharing)
+- Uniswap Liquidity
+  - [Getting Started](https://support.uniswap.org/hc/en-us/sections/8122851346573-Getting-Started)
+  - [How to Become a Liquidity Provider on Uniswap](https://opensea.io/collection/panaverse)
+  - [pYoutube tutorial on creating a liquidity pool and coin](https://www.youtube.com/watch?v=VPWoKAUsMfY)
+  - [Create pool at uniswap](https://tokpie.io/blog/how-create-pool-uniswap-erc20-pair/)
