@@ -45,3 +45,5 @@
 - Quarter I Extra Assignments
   - Liquidity pool for own token
     - [Web 3.0 User Manual Assignment](../Lectures/Onsite/01%20WMD%20at%20UMT/class_02-20221014/assignment/)
+  - BMI Calculator
+    - [BMI Calculator](../Lectures/Online/02%20Project-Based%20Programming%20By%20Hira%20Khan%20and%20Adil%20Altaf/assignments/class_01-20221008/)
