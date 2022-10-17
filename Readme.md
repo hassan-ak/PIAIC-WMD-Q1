@@ -2,9 +2,6 @@
 
 ## Program of Studies (Quarter I)
 
-- Presentation
-  - [Panaverse](https://docs.google.com/presentation/d/12C1s4UBTlR9nZNEkRE6aAuGeRA3s92jx-8nJKo9jdH4/edit?fbclid=IwAR3jsDKwDlgOL2vqgp5nVpME_N_MQgIVpkF6qqoBtOuRbGPUUgWcIYM90sE#slide=id.gf48166e210_0_2583)
-
 ### Quarter I-A: Web 3.0 and Metaverse Theory
 
 - Reading Material
@@ -57,36 +54,37 @@
 ### Quarter I-B: Object Oriented Programming using Typescript
 
 - Presentations
-  - [Introduction to Javascript](https://docs.google.com/presentation/d/18b2jZ1PIjhgnsrvl7LuuaZcKhzhyx26d9mV9KrtT5TE/edit#slide=id.g15a453e6c68_0_126)
+  - [Node.js Intro](https://docs.google.com/presentation/d/1eOLJTN0FyVAw6lMUvA_XYLORKnudWXyzXsB6sg5oPIs/edit#slide=id.p)
 - Reading Material
   - [TypeScript is the top programming language, and our core language](https://www.helpnetsecurity.com/2022/09/20/25-most-popular-programming-languages-trends/)
   - [JavaScript is no longer the favorite programming language for developers, TypeScript is the number one programming language among developers](https://www.techradar.com/news/javascript-no-longer-the-favorite-language-among-developers)
   - [TypeScript and C# both were created by the same person named Anders Hejlsberg](https://dev.to/destrodevshow/typescript-and-c-both-created-by-the-same-person-named-anders-hejlsberg-42g4)
 - Books
-  - [A Smarter Way to Learn JavaScript](https://books.google.com.pk/books/about/A_Smarter_Way_to_Learn_JavaScript.html?id=P-3WswEACAAJ&source=kp_book_description&redir_esc=y) by Mark Myers
   - [JavaScript from Beginner to Professional](https://www.amazon.com/JavaScript-Beginner-Professional-building-interactive/dp/1800562527/ref=sr_1_4) by Laurence Lars Svekis and Rob Percival, [Book Code](https://github.com/PacktPublishing/JavaScript-from-Beginner-to-Professional)
   - [Learning TypeScript: Enhance Your Web Development Skills Using Type-Safe JavaScript](https://www.amazon.com/Learning-TypeScript-Development-Type-Safe-JavaScript/dp/1098110331/ref=sr_1_1)
   - [TypeScript Cookbook: Future Advanced TypeScript Book](https://www.oreilly.com/library/view/typescript-cookbook/9781098136642/)
 - Practice Projects
   - [JavaScript Free Code Camp for Practice](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/#basic-javascript)
   - [In Class Companion projects and articles for Learning TypeScript](https://www.learningtypescript.com/)
-  - [Learning TypeScript Project Code in Class](https://github.com/LearningTypeScript/projects)
 - Video Links
   - [HTML by Hira Khan](https://www.youtube.com/playlist?list=PLKvqnz8z1zWQ3BALy86tIXICkG874wAc6)
   - [CSS Intro by Hira Khan](https://www.youtube.com/playlist?list=PLKvqnz8z1zWQSWIen_zUSEBmtqzPLuRob)
   - [JavaScript by Zeeshan Hanif](https://www.youtube.com/playlist?list=PLKvqnz8z1zWQdc0NSLknxmxBch5gLOqyo)
+  - [TypeScript Crash Course for Beginners with Matt Pocock: Video](https://www.youtube.com/watch?v=p6dO9u0M7MQ&t=25s)
+  - [Learning TypeScript from Scratch with Matt Pocock: A TypeScript tutorial](https://www.youtube.com/watch?v=qcFmCKQDa2s&t=1s)
+  - [Advanced TypeScript with Matt: Video](https://www.youtube.com/watch?v=F7O4gA0GXqI&t=389s)
+  - [TypeScript tips and Tricks with Matt: Video](https://www.youtube.com/watch?v=hBk4nV7q6-w&t=24s)
 - Learn From Matt Pocock The TypeScript Wizard
   - [Latest News: Matt Joins Vercel](https://twitter.com/mattpocockuk/status/1559105611995955202)
   - [Total TypeScript Website](https://www.totaltypescript.com/)
-  - [TypeScript Crash Course for Beginners with Matt Pocock: Video](https://www.youtube.com/watch?v=p6dO9u0M7MQ&t=25s)
-  - [Learning TypeScript from Scratch with Matt Pocock: A TypeScript tutorial](https://www.youtube.com/watch?v=qcFmCKQDa2s&t=1s)
-  - [Beginner TypeScript Tutorial](https://github.com/total-typescript/beginners-typescript-tutorial)
   - [Zod Tutorial: Video](https://www.totaltypescript.com/tutorials/zod)
   - [Zod Docs](https://zod.dev/)
-  - [Advanced TypeScript Workshop](https://github.com/total-typescript/advanced-typescript-workshop)
-  - [Advanced TypeScript with Matt: Video](https://www.youtube.com/watch?v=F7O4gA0GXqI&t=389s)
   - [TypeScript Tips](https://www.totaltypescript.com/tips)
-  - [TypeScript tips and Tricks with Matt: Video](https://www.youtube.com/watch?v=hBk4nV7q6-w&t=24s)
+- Github Repo
+  - [JavaScript from Beginner to Professional](https://github.com/PacktPublishing/JavaScript-from-Beginner-to-Professional)
+    [Learning TypeScript Project Code in Class](https://github.com/LearningTypeScript/projects)
+  - [Beginner TypeScript Tutorial](https://github.com/total-typescript/beginners-typescript-tutorial)
+  - [Advanced TypeScript Workshop](https://github.com/total-typescript/advanced-typescript-workshop)
 
 ### Quarter I-W: Study Material for Super-Achievers: UI/UX Design using Figma and Design Patterns Part 1
 
@@ -115,6 +113,7 @@
   - [Remote Branches](http://git-scm.com/book/en/v2/Git-Branching-Remote-Branches#Tracking-Branches)
 - Video Links
   - [Version Control using Git and GitHub By Sir Zeeshan Hanif Videos](https://www.youtube.com/playlist?list=PLKueo-cldy_HjRnPUL4G3pWHS7FREAizF)
+  - [Version Control using Git and GitHub By Sir Zeeshan Hanif](https://www.youtube.com/playlist?list=PL4lZMpZtayiGkfhq9AbFTSd4GbX25C_0L)
 - Books
   - [Learn Version Control with Git: A step-by-step course for the complete beginner](https://www.amazon.com/Learn-Version-Control-step-step/dp/1520786506) by Tobias Günther
 - Practice Projects
