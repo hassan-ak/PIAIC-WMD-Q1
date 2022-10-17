@@ -23,6 +23,20 @@
     - [WMD class 02](../Lectures/Onsite/01%20WMD%20at%20UMT/class_02-20221014/javaScript/)
   - [Node.js Intro](https://docs.google.com/presentation/d/1eOLJTN0FyVAw6lMUvA_XYLORKnudWXyzXsB6sg5oPIs/edit?usp=sharing)
     - [WMD class 02](../Lectures/Onsite/01%20WMD%20at%20UMT/class_02-20221014/hassanNode/)
+- Video Links
+  - [HTML by Hira Khan](https://www.youtube.com/playlist?list=PLKvqnz8z1zWQ3BALy86tIXICkG874wAc6)
+    - [HTML](../Quarter%20I-B%20Object%20Oriented%20Programming%20using%20Typescript/02%20learning%20html/a%20-%20HTML%20by%20Hira%20Khan/)
+  - [CSS Intro by Hira Khan](https://www.youtube.com/playlist?list=PLKvqnz8z1zWQSWIen_zUSEBmtqzPLuRob)
+    - [CSS](../Quarter%20I-B%20Object%20Oriented%20Programming%20using%20Typescript/03%20learning%20css/a%20-%20CSS%20by%20Hira%20Khan/)
+  - [JavaScript by Zeeshan Hanif](https://www.youtube.com/playlist?list=PLKvqnz8z1zWQdc0NSLknxmxBch5gLOqyo)
+    - [JS](../Quarter%20I-B%20Object%20Oriented%20Programming%20using%20Typescript/01%20learning%20javaScript/z%20-%20JS%20by%20Zeeshan%20Hanif/)
+- Books
+  - [A Smarter Way to Learn JavaScript](https://books.google.com.pk/books/about/A_Smarter_Way_to_Learn_JavaScript.html?id=P-3WswEACAAJ&source=kp_book_description&redir_esc=y) by Mark Myers
+    - Chapter 01 - 42
+      - [JS code](../Quarter%20I-B%20Object%20Oriented%20Programming%20using%20Typescript/01%20learning%20javaScript/a%20-%20A%20smarter%20way%20to%20learn%20JS/)
+  - [JavaScript from Beginner to Professional](https://www.amazon.com/JavaScript-Beginner-Professional-building-interactive/dp/1800562527/ref=sr_1_4) by Laurence Lars Svekis and Rob Percival, [Book Code](https://github.com/PacktPublishing/JavaScript-from-Beginner-to-Professional)
+    - Chapter 01 - 02
+      - [JS Code](../Quarter%20I-B%20Object%20Oriented%20Programming%20using%20Typescript/01%20learning%20javaScript/b%20-%20JavaScript%20from%20Beginner%20to%20Professional/)
 
 ### Quarter I-W: Study Material for Super-Achievers: UI/UX Design using Figma and Design Patterns Part 1
 
