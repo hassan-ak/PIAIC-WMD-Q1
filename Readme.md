@@ -82,7 +82,7 @@
   - [TypeScript Tips](https://www.totaltypescript.com/tips)
 - Github Repo
   - [JavaScript from Beginner to Professional](https://github.com/PacktPublishing/JavaScript-from-Beginner-to-Professional)
-    [Learning TypeScript Project Code in Class](https://github.com/LearningTypeScript/projects)
+  - [Learning TypeScript Project Code in Class](https://github.com/LearningTypeScript/projects)
   - [Beginner TypeScript Tutorial](https://github.com/total-typescript/beginners-typescript-tutorial)
   - [Advanced TypeScript Workshop](https://github.com/total-typescript/advanced-typescript-workshop)
 
