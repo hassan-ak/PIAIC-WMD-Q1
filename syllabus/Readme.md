@@ -47,3 +47,5 @@
     - [Web 3.0 User Manual Assignment](../Lectures/Onsite/01%20WMD%20at%20UMT/class_02-20221014/assignment/)
   - BMI Calculator
     - [BMI Calculator](../Lectures/Online/02%20Project-Based%20Programming%20By%20Hira%20Khan%20and%20Adil%20Altaf/assignments/class_01-20221008/)
+  - A responsive webpage
+    - [New year countdown](../Lectures/Online/01%20Programming%20for%20Absolute%20Beginners%20By%20Daniyal%20Nagori/assignments/class_01-20221006/)
