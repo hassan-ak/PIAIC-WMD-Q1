@@ -21,8 +21,11 @@
 - Presentation
   - [Introduction to Javascript](https://docs.google.com/presentation/d/18b2jZ1PIjhgnsrvl7LuuaZcKhzhyx26d9mV9KrtT5TE/edit#slide=id.gcb9a0b074_1_0)
     - [WMD class 02](../Lectures/Onsite/01%20WMD%20at%20UMT/class_02-20221014/javaScript/)
+    - [Daniyal Class 02](../Lectures/Online/01%20Programming%20for%20Absolute%20Beginners%20By%20Daniyal%20Nagori/class_02-20221010/)
   - [Node.js Intro](https://docs.google.com/presentation/d/1eOLJTN0FyVAw6lMUvA_XYLORKnudWXyzXsB6sg5oPIs/edit?usp=sharing)
     - [WMD class 02](../Lectures/Onsite/01%20WMD%20at%20UMT/class_02-20221014/hassanNode/)
+  - [JavaScript For Absolute Beginners](https://docs.google.com/presentation/d/1kYB6BA-0BhrcsZMuQbiBk1t3KrdIU1Qd_tYMQ2RprqE/edit#slide=id.p)
+    - [Daniyal Class 02](../Lectures/Online/01%20Programming%20for%20Absolute%20Beginners%20By%20Daniyal%20Nagori/class_02-20221010/)
 - Video Links
   - [HTML by Hira Khan](https://www.youtube.com/playlist?list=PLKvqnz8z1zWQ3BALy86tIXICkG874wAc6)
     - [HTML](../Quarter%20I-B%20Object%20Oriented%20Programming%20using%20Typescript/02%20learning%20html/a%20-%20HTML%20by%20Hira%20Khan/)
