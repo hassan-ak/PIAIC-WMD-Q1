@@ -24,6 +24,7 @@
     - [Daniyal Class 02](../Lectures/Online/01%20Programming%20for%20Absolute%20Beginners%20By%20Daniyal%20Nagori/class_02-20221010/)
   - [Node.js Intro](https://docs.google.com/presentation/d/1eOLJTN0FyVAw6lMUvA_XYLORKnudWXyzXsB6sg5oPIs/edit?usp=sharing)
     - [WMD class 02](../Lectures/Onsite/01%20WMD%20at%20UMT/class_02-20221014/hassanNode/)
+    - [Adil class 02](../Lectures/Online/02%20Project-Based%20Programming%20By%20Hira%20Khan%20and%20Adil%20Altaf/class_02-20221015/)
   - [JavaScript For Absolute Beginners](https://docs.google.com/presentation/d/1kYB6BA-0BhrcsZMuQbiBk1t3KrdIU1Qd_tYMQ2RprqE/edit#slide=id.p)
     - [Daniyal Class 02](../Lectures/Online/01%20Programming%20for%20Absolute%20Beginners%20By%20Daniyal%20Nagori/class_02-20221010/)
 - Video Links
@@ -38,8 +39,11 @@
     - Chapter 01 - 42
       - [JS code](../Quarter%20I-B%20Object%20Oriented%20Programming%20using%20Typescript/01%20learning%20javaScript/a%20-%20A%20smarter%20way%20to%20learn%20JS/)
   - [JavaScript from Beginner to Professional](https://www.amazon.com/JavaScript-Beginner-Professional-building-interactive/dp/1800562527/ref=sr_1_4) by Laurence Lars Svekis and Rob Percival, [Book Code](https://github.com/PacktPublishing/JavaScript-from-Beginner-to-Professional)
-    - Chapter 01 - 02
+    - Chapter 01 - 04
       - [JS Code](../Quarter%20I-B%20Object%20Oriented%20Programming%20using%20Typescript/01%20learning%20javaScript/b%20-%20JavaScript%20from%20Beginner%20to%20Professional/)
+  - [Learning TypeScript: Enhance Your Web Development Skills Using Type-Safe JavaScript](https://www.amazon.com/Learning-TypeScript-Development-Type-Safe-JavaScript/dp/1098110331/ref=sr_1_1)
+    - Chapter 01 - 03
+      - [TS Code](../Quarter%20I-B%20Object%20Oriented%20Programming%20using%20Typescript/04%20learning%20typeScript/a%20-Learning%20TypeScript/)
 
 ### Quarter I-W: Study Material for Super-Achievers: UI/UX Design using Figma and Design Patterns Part 1
 
@@ -66,3 +70,11 @@
     - [BMI Calculator](../Lectures/Online/02%20Project-Based%20Programming%20By%20Hira%20Khan%20and%20Adil%20Altaf/assignments/class_01-20221008/)
   - A responsive webpage
     - [New year countdown](../Lectures/Online/01%20Programming%20for%20Absolute%20Beginners%20By%20Daniyal%20Nagori/assignments/class_01-20221006/)
+  - Manipulating an array
+    - [Manipulating an array](../Lectures/Online/02%20Project-Based%20Programming%20By%20Hira%20Khan%20and%20Adil%20Altaf/assignments/class_02-20221015/)
+  - Company product catalog
+    - [Company product catalog](../Lectures/Online/02%20Project-Based%20Programming%20By%20Hira%20Khan%20and%20Adil%20Altaf/assignments/class_02-20221015/)
+  - Evaluating a number game
+    - [Evaluating a number game](../Lectures/Online/02%20Project-Based%20Programming%20By%20Hira%20Khan%20and%20Adil%20Altaf/assignments/class_02-20221015/)
+  - Friend checker game
+    - [Friend checker game](../Lectures/Online/02%20Project-Based%20Programming%20By%20Hira%20Khan%20and%20Adil%20Altaf/assignments/class_02-20221015/)
