@@ -1,4 +1,4 @@
-# Chapter 4. Structural Typing
+# Chapter 4. Objects
 
 - Object Types
   - Declaring Object Types
