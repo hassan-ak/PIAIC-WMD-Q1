@@ -42,8 +42,11 @@
     - Chapter 01 - 04
       - [JS Code](../Quarter%20I-B%20Object%20Oriented%20Programming%20using%20Typescript/01%20learning%20javaScript/b%20-%20JavaScript%20from%20Beginner%20to%20Professional/)
   - [Learning TypeScript: Enhance Your Web Development Skills Using Type-Safe JavaScript](https://www.amazon.com/Learning-TypeScript-Development-Type-Safe-JavaScript/dp/1098110331/ref=sr_1_1)
-    - Chapter 01 - 03
-      - [TS Code](../Quarter%20I-B%20Object%20Oriented%20Programming%20using%20Typescript/04%20learning%20typeScript/a%20-Learning%20TypeScript/)
+    - Chapter 01 - 04
+      - [TS Code](../Quarter%20I-B%20Object%20Oriented%20Programming%20using%20Typescript/04%20learning%20typeScript/a-Learning%20TypeScript/)
+- Github Repos
+  - [Learn TypeScript](https://github.com/panacloud-modern-global-apps/learn-typescript)
+    - [TS Coding](../Quarter%20I-B%20Object%20Oriented%20Programming%20using%20Typescript/04%20learning%20typeScript/b-Learn%20Typescript/)
 
 ### Quarter I-W: Study Material for Super-Achievers: UI/UX Design using Figma and Design Patterns Part 1
 
