@@ -1,0 +1,3 @@
+# TypeScript
+
+## Duck Typing
