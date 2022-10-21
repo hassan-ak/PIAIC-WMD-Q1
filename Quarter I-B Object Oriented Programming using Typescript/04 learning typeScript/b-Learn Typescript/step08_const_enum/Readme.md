@@ -1,0 +1,3 @@
+# TypeScript
+
+## Const ENUM
