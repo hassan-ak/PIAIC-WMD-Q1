@@ -1,0 +1,3 @@
+# TypeScript
+
+## Explict Casting
