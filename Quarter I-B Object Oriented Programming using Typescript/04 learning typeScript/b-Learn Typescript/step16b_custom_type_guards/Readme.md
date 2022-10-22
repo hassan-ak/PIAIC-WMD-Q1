@@ -1,0 +1,3 @@
+# TypeScript
+
+## Custom Type Guard
