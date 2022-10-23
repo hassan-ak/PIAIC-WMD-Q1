@@ -1,0 +1,3 @@
+# TypeScript
+
+## Interface Hybrid Types
