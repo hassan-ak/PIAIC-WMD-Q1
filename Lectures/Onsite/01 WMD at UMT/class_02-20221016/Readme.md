@@ -8,4 +8,8 @@
 
 ## Assignments
 
-1. [Web 3.0 User Manual Assignment](./assignment/Readme.md)
+1.  [Install Metamask and get some tokens](./assignment/Readme.md)
+2.  [Create your ERC20 token](./assignment/Readme.md)
+3.  [Create an NFT](./assignment/Readme.md)
+4.  [Provide liquidity to a existing pool](./assignment/Readme.md)
+5.  [Create a new pool and provide liquidity](./assignment/Readme.md)
