@@ -13,7 +13,7 @@
 - From assets to borrow select amount and borrow
 - Borrow transaction Ether Scan URL `https://goerli.etherscan.io/tx/0x492a7fb6cbe5c3e90266a3664e84bf543fd5d57cdd83694ddab55cc1e79f19ea`
 
-  ![Aave supplies](./1-2.PNG)
+  ![Aave Borrow](./1-2.PNG)
 
 ## Create DAO and Add Members
 
@@ -23,7 +23,7 @@
 - Ether Scan URL `https://goerli.etherscan.io/tx/0x2ebac33796668cbd3c76873fb068330cae3072ee72695afc332bd5d61f5f8b54`
 - `sportslive.aragonid.eth`
 
-  ![Aave supplies](./1-3.PNG)
+  ![Aragon Platform](./1-3.PNG)
 
 - You can create a new vote or vote on an excisting one
 
