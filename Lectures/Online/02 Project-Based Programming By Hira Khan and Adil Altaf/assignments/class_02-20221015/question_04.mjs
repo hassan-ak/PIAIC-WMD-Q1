@@ -22,7 +22,7 @@ switch (friendName) {
     result = `Yes ${friendName} is friend.`;
     break;
   default:
-    result = "I don't know " + person;
+    result = "I don't know " + friendName;
     break;
 }
 console.log(result);
