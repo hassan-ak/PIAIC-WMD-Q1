@@ -1,4 +1,4 @@
-# Web3.0 User Manual
+# Web 3.0 User Guide
 
 - [Different versions of web](https://twitter.com/alexxubyte/status/1579497349490954240)
   - Web 1.0
