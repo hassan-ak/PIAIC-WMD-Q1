@@ -8,6 +8,7 @@
     the for in loop, output the values from the array into the console.
 */
 
+console.log('Part 01');
 let car = {
   model: 'Golf',
   make: 'Volkswagen',
@@ -17,7 +18,8 @@ for (let prop in car) {
   console.log(prop, ' : ', car[prop]);
 }
 
+console.log('\nPart 02');
 let car1 = ['Golf', 'Volkswagen', 1999];
-for (let prop of car1) {
-  console.log(prop);
+for (let prop in car1) {
+  console.log(prop, car1[prop]);
 }
