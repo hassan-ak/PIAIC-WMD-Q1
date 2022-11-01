@@ -4,3 +4,4 @@
 
 - [Video Lecture](https://youtu.be/FhvDgJGfK_Y)
   - Review Session
+- [Assignment](../assignments/class_03-20221022/)
