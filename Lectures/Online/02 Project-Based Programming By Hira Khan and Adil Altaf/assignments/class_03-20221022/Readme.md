@@ -1,4 +1,6 @@
-# Rock Paper Scissors game
+# Assignemt Class 02 - Project-Based Programming By Hira Khan and Adil Altaf (2022/10/22)
+
+## Question 01
 
 - Rock Paper Scissors game
   - This is a game between a player and the computer, where both will make a random selection of either Rock, Paper, or Scissors (alternatively, you could create a version using real player input!). Rock will beat out Scissors, Paper will beat out Rock, and Scissors will beat out Paper. You can use JavaScript to create your own version of this game, applying the logic with an if statement. Since this project is a little more difficult, here are some suggested steps:
