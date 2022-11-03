@@ -6,9 +6,9 @@
         3. Create a variable to use for the output message containing the value "My Selection: "
         4. Using the switch statement (and creativity), provide a response back 
         regarding a prize that is awarded depending on what number is selected
-5. Use the switch break to add combined results for prizes
-6. Output the message back to the user by concatenating your prize variable 
-strings and the output message string
+        5. Use the switch break to add combined results for prizes
+        6. Output the message back to the user by concatenating your prize variable 
+        strings and the output message string
 */
 import prompSync from 'prompt-sync';
 const prompt = prompSync();
