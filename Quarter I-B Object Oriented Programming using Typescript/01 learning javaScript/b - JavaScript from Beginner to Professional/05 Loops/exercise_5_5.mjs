@@ -31,19 +31,33 @@
     13. Output the grid into the console.
 */
 
+// var grid = [];
+// var cells = 64;
+// var counter = 0;
+// var rowArray;
+// for (let i = 0; i < cells + 1; i++) {
+//   if (counter % 8 === 0) {
+//     if (rowArray != undefined) {
+//       grid.push(rowArray);
+//     }
+//     rowArray = [];
+//   }
+//   counter++;
+//   let temp = counter;
+//   rowArray.push(temp);
+// }
+// console.table(grid);
+
 var grid = [];
-var cells = 64;
+var nRows = 10;
+var nCol = nRows;
 var counter = 0;
-var rowArray;
-for (let i = 0; i < cells + 1; i++) {
-  if (counter % 8 === 0) {
-    if (rowArray != undefined) {
-      grid.push(rowArray);
-    }
-    rowArray = [];
+for (let i = 0; i < nRows; i++) {
+  var innerArray = [];
+  for (let j = 0; j < nCol; j++) {
+    counter++;
+    innerArray.push(counter);
   }
-  counter++;
-  let temp = counter;
-  rowArray.push(temp);
+  grid.push(innerArray);
 }
 console.table(grid);
