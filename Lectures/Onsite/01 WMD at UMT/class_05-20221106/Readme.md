@@ -2,5 +2,6 @@
 
 ## Class 05 - 2022/11/06
 
-3. JavaScript from Beginner to Professional
+1. JavaScript from Beginner to Professional
    - Chapter 03 to 06
+2. [What the heck is the event loop](https://youtu.be/8aGhZQkoFbQ)
