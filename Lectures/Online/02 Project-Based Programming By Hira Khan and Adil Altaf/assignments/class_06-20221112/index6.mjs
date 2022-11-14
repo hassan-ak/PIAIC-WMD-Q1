@@ -1,5 +1,5 @@
 /*
-    Break Fask example using async / Await
+    BreakFast example using async / Await
         - Write code that must achieve the following requirements:
             - First, start making breakfast
                 - Start making an omelette immediately. This should take 5 seconds.
