@@ -1,0 +1,19 @@
+{
+  "name": "step03d_chalk",
+  "version": "1.0.0",
+  "description": "Using Inquirer Package\r The latest version (9+) of Inquirer has start using Native ECMA Script Packages. In most of our projects and assignment we will use this package.",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.1.2",
+    "inquirer": "^9.1.4"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.3"
+  }
+}
