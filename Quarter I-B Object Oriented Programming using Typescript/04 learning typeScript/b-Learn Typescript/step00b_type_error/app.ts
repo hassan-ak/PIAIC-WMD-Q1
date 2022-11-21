@@ -1,2 +1,5 @@
+// Step-00b Type Error
+
 let message = 'Hello World';
-// console.loger(message); // Type Error
+// Type Error
+// console.loger(message);
