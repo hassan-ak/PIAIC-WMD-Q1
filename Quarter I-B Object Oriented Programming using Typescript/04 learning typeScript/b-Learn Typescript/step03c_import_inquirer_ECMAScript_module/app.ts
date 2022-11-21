@@ -1,3 +1,5 @@
+// Step-03c Using Native ECMAScript Modules in Node.js
+
 import inquirer from 'inquirer';
 
 let answers = await inquirer.prompt([
