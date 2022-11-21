@@ -1,4 +1,4 @@
 "use strict";
-exports.__esModule = true;
-var a = 5;
-exports["default"] = a;
+Object.defineProperty(exports, "__esModule", { value: true });
+let a = 5;
+exports.default = a;
