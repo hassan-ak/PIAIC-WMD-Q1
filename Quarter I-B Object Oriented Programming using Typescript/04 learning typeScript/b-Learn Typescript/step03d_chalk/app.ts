@@ -1,10 +1,18 @@
-import inquirer from "inquirer";
-import chalk from "chalk";
+// Step-03d Using Inquirer and Chalk to CLI Apps
 
-let answers = await inquirer.prompt([{
-    name: "age",
-    type: "number",
-    message: "Enter your Age:"}
+import inquirer from 'inquirer';
+import chalk from 'chalk';
+
+let answers = await inquirer.prompt([
+  {
+    name: 'age',
+    type: 'number',
+    message: 'Enter your Age:',
+  },
 ]);
 
-console.log(chalk.blue("Insha Allah, in " + (60 - answers.age) + " years you will be 60 years old."));
+console.log(
+  chalk.blue(
+    'Insha Allah, in ' + (60 - answers.age) + ' years you will be 60 years old.'
+  )
+);
