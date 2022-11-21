@@ -1,2 +1,5 @@
-// lett message = "Hello World";//syntax error
+// Step-00a Syntax Error
+
+//syntax error
+// lett message = "Hello World;
 // console.log(message);
