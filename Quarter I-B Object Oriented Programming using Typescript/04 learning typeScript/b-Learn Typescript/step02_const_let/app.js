@@ -1,4 +1,5 @@
 "use strict";
+// Step-02 Variable Declaration
 //use const where variable values do not change
 const a = 5;
 const b = 33;
@@ -13,4 +14,8 @@ else {
     let z = 'string';
     //use z
 }
-console.log('let: ' + z); // Error: z is not defined in this scope
+// console.log('let: ' + z); // Error: z is not defined in this scope
+// //
+// let    - local scope  / block scope    - muteable    -
+// const  - local scope  / block scope    - un-muteable -
+// var    - global scope / function scope - muteable    - re-declared
