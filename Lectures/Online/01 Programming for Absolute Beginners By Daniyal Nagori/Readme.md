@@ -31,4 +31,8 @@
 
 1. [JavaScript promises, mastering the asynchronous](https://www.codingame.com/playgrounds/347/javascript-promises-mastering-the-asynchronous/what-is-asynchronous-in-javascript)
 
+### Class 8:
+
+1. [15+ Array Methods in Javascript](https://dev.to/codewithtee/15-array-methods-in-javascript-1p1m)
+
 ---
