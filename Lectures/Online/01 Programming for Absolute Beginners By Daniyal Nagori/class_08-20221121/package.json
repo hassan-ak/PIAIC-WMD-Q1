@@ -1,0 +1,12 @@
+{
+  "name": "class_08-20221121",
+  "version": "1.0.0",
+  "description": "- [Video Lecture](https://youtu.be/cpZ49EKGFTU)\r - [15+ Array Methods in Javascript](https://dev.to/codewithtee/15-array-methods-in-javascript-1p1m)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
