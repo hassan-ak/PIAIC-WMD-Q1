@@ -1,0 +1,16 @@
+{
+  "name": "class_08-20221121",
+  "version": "1.0.0",
+  "description": "- Write a program to take an input from user and check if it is palindrome or not.\r     - console accordingly",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.1.2",
+    "prompt-sync": "^4.2.0"
+  }
+}
