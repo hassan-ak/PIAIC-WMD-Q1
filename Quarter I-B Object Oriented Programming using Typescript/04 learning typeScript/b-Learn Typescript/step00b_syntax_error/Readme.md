@@ -1,6 +1,6 @@
 # TypeScript
 
-## Step-00a Syntax Error
+## Step-00b Syntax Error
 
 The Output:
 

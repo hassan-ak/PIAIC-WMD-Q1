@@ -1,5 +1,5 @@
 {
-  "name": "step00a_syntax_error",
+  "name": "step00b_syntax_error",
   "version": "1.0.0",
   "description": "[For the latest docs](https://www.typescriptlang.org/docs/)",
   "main": "index.js",
