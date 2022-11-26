@@ -1,6 +1,6 @@
 # TypeScript
 
-## Step-00c Assignability Error
+## Step-00d Assignability Error
 
 The Output:
 

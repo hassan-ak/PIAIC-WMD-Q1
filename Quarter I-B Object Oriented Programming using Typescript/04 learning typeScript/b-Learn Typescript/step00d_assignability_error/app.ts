@@ -1,4 +1,4 @@
-// Step-00c Assignability Error
+// Step-00d Assignability Error
 
 let message = 'Hello World';
 // message = 6;
