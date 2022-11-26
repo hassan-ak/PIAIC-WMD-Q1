@@ -28,13 +28,23 @@ Hello World Steps:
     tsc --init
     ```
 
-7.  Make it a Node.js project by giving the following command:
+7.  If you want to run TypeScript tsc command in Windows Powershell:
+
+    - Open Powershell in Adminstrator mode and run
+    - [For more Details Check this out](https://islenmisveri.wordpress.com/2021/01/31/working-with-scripts-in-powershell-typescript-compiler-tsc-problem-fix/)
+
+      ```
+      Set-ExecutionPolicy RemoteSigned
+
+      ```
+
+8.  Make it a Node.js project by giving the following command:
 
     ```
     npm init -y
     ```
 
-8.  Create file app.ts
+9.  Create file app.ts
 
     - We have used string type to store and print the message.
 
@@ -50,16 +60,16 @@ Hello World Steps:
       7. symbol // Symbol(), Symbol("hi"),
       ```
 
-9.  Transpile JavaScript by running:
+10. Transpile JavaScript by running:
 
     ```
     tsc
     ```
 
-10. Run transpiled javascript by running the following command:
+11. Run transpiled javascript by running the following command:
 
     ```
     node app
     ```
 
-11. Also Read: https://code.visualstudio.com/Docs/languages/typescript
+12. Also Read: https://code.visualstudio.com/Docs/languages/typescript
