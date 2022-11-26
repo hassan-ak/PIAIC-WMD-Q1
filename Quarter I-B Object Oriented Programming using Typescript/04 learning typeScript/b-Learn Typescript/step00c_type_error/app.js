@@ -1,5 +1,5 @@
-"use strict";
-// Step-00b Type Error
+'use strict';
+// Step-00c Type Error
 let message = 'Hello World';
 // Type Error
 console.loger(message);

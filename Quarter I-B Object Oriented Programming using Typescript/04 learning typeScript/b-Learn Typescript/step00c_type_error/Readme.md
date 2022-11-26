@@ -1,6 +1,6 @@
 # TypeScript
 
-## Step-00b Type Error
+## Step-00c Type Error
 
 The Output:
 
