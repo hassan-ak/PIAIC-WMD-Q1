@@ -1,3 +1,0 @@
-# TypeScript
-
-## Any Type
