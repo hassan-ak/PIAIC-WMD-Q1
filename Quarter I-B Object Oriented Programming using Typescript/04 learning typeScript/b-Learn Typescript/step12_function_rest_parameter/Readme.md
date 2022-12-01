@@ -1,3 +1,0 @@
-# TypeScript
-
-## Function Rest Parameter
