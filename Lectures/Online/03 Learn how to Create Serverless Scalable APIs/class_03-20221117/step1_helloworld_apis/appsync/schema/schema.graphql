@@ -1,0 +1,28 @@
+# Query and Mutation are also types
+# appSunc dont deploy if query not provided
+# ! makes it a permanent field
+
+# entities
+type Todo {
+  id: ID!
+  title: String!
+  done: Boolean!
+}
+
+# inputs
+input TodoInput {
+  id: ID!
+  title: String!
+  done: Boolean!
+}
+
+# queries
+type Query {
+  getTodos: [Todo]
+}
+
+# Mutations
+type Mutation {
+  addTodo(todo: TodoInput!): Todo
+  updateTodo(id: ID!, title: String!, done: Boolean!): Todo
+}
