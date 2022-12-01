@@ -1,3 +1,0 @@
-# TypeScript
-
-## Tuples
