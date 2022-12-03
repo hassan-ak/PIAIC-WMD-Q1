@@ -1,2 +1,2 @@
-// a.ts
+// ma.ts
 export const shared = 'Cher';

@@ -1,5 +1,5 @@
-"use strict";
-// // e.ts
-// const shared = 'Cher';
+// // mf.ts
+const shared = 'Cher';
+export {};
 // // ~~~~~~
 // // Cannot redeclare block-scoped variable 'shared'.

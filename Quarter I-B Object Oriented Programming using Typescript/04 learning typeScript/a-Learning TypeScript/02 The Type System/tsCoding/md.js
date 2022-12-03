@@ -1,6 +1,5 @@
-// d.ts
-const shared = 'Cher';
+"use strict";
+// md.ts
+// // const shared = 'Cher';
 // ~~~~~~
 // Cannot redeclare block-scoped variable 'shared'.
-
-export {};

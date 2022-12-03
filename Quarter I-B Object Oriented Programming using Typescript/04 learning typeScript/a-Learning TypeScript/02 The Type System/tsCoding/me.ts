@@ -1,0 +1,3 @@
+// me.ts
+const shared = 'Cher'; // Ok
+export {};
