@@ -1,1 +1,32 @@
 # Chapter 01: From JavaScript to TypeScript
+
+- History of JavaScript
+- Vanilla JavaScript’s Pitfalls
+  - Costly Freedom (No types)
+  - Loose Documentation
+  - Weaker Developer Tooling
+- TypeScript!
+  - Programming language
+  - Type checker
+  - Compiler
+  - Language service
+- Getting Started in the TypeScript Playground
+  - TypeScript in Action
+  - Freedom Through Restriction
+  - Precise Documentation
+  - Stronger Developer Tooling
+  - Compiling Syntax
+- Getting Started Locally
+  - Install Typescript
+    - `npm i -g typescript`
+    - `tsc --version`
+  - Running Locally
+    - `tsc --init`
+    - add `index.ts`
+    - tsc index.ts
+  - Editor Features
+- What TypeScript Is Not
+  - A Remedy for Bad Code
+  - Extensions to JavaScript
+  - Slower Than JavaScript
+  - Finished Evolving
