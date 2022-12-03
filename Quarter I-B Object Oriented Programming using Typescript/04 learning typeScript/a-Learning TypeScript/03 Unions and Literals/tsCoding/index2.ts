@@ -1,43 +1,66 @@
-// Strict Null Checking
+/*
+    Chapter 03: Unions and Literals
+*/
 
-// The Billion-Dollar Mistake
-// strict null check false following code will run ok.
-let nameMaybe = Math.random() > 0.5 ? 'Tony Hoare' : undefined;
-// nameMaybe.toLowerCase();
+/***********************************************************/
 
-// Truthiness Narrowing
-let geneticist = Math.random() > 0.5 ? 'Barbara McClintock' : undefined;
-if (geneticist) {
-  geneticist.toUpperCase(); // Ok: string
+/*---------------*/
+/*-- Narrowing --*/
+/*---------------*/
+
+/***********************************************************/
+
+/****************************/
+/*** Assignment Narrowing ***/
+/****************************/
+
+/***********************************************************/
+let admiral: number | string;
+admiral = 'Grace Hopper';
+admiral.toUpperCase(); // Ok: string
+// Error
+// // admiral.toFixed();
+
+/***********************************************************/
+let inventor: number | string = 'Hedy Lamarr';
+inventor.toUpperCase(); // Ok: string
+// Error
+// // inventor.toFixed();
+
+/***********************************************************/
+
+/**************************/
+/*** Conditional Checks ***/
+/**************************/
+
+/***********************************************************/
+// Type of scientist: number | string
+let scientist = Math.random() > 0.5 ? 'Rosalind Franklin' : 51;
+if (scientist === 'Rosalind Franklin') {
+  // Type of scientist: string
+  scientist.toUpperCase(); // Ok
 }
-// geneticist.toUpperCase(); // property error
-geneticist && geneticist.toUpperCase(); // Ok: string | undefined
-geneticist?.toUpperCase(); // Ok: string | undefined
+// Error
+// // scientist.toUpperCase();
 
-// Variables Without Initial Values
-let mathematician1: string;
-// mathematician1?.length;
-// Error: Variable 'mathematician' is used before being assigned.
-let mathematician2: string | undefined;
-console.log(mathematician2?.length); // Ok
-mathematician2 = 'Mark Goldberg';
-mathematician2.length; // Ok
+/***********************************************************/
 
-// Type Aliases
-// each variale can be off any four types
-let rawDataFirst: boolean | number | string | null | undefined;
-let rawDataSecond: boolean | number | string | null | undefined;
-let rawDataThird: boolean | number | string | null | undefined;
-// above code can be transformed to
-type RawData = boolean | number | string | null | undefined;
-let rawDataFirst1: RawData;
-let rawDataSecond1: RawData;
-let rawDataThird1: RawData;
+/*********************/
+/*** Typeof Checks ***/
+/*********************/
 
-// Type Aliases Are Not JavaScript
-type SomeType = string | undefined;
-// console.log(SomeType); error
+/***********************************************************/
+let researcher = Math.random() > 0.5 ? 'Rosalind Franklin' : 51;
+if (typeof researcher === 'string') {
+  researcher.toUpperCase(); // Ok: string
+}
+if (!(typeof researcher === 'string')) {
+  researcher.toFixed(); // Ok: number
+} else {
+  researcher.toUpperCase(); // Ok: string
+}
+typeof researcher === 'string'
+  ? researcher.toUpperCase() // Ok: string
+  : researcher.toFixed(); // Ok: number
 
-// Combining Type Aliases
-type Id = number | string;
-type IdMaybe = Id | undefined | null;
+/***********************************************************/
