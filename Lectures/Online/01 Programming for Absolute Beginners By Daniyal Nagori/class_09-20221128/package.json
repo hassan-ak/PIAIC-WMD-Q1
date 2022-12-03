@@ -1,0 +1,12 @@
+{
+  "name": "class_09-20221128",
+  "version": "1.0.0",
+  "description": "- [Video Lecture](https://youtu.be/s7C3J2hXOFg)\r - TypeScript Book\r   - Chapter 01 - 02",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
