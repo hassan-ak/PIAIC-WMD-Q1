@@ -1,65 +1,97 @@
-// *** Objects *** //
+/*
+    Chapter 4. Objects
+*/
 
-//// *** Intersection Types *** ////
+/***********************************************************/
 
-type Artwork = {
-  genre: string;
+/*----------------------------*/
+/*-- Unions of Object Types --*/
+/*----------------------------*/
+
+/***********************************************************/
+
+/***********************************/
+/*** Inferred Object-Type Unions ***/
+/***********************************/
+
+/***********************************************************/
+const poem =
+  Math.random() > 0.5
+    ? { name: 'The Double Image', pages: 7 }
+    : { name: 'Her Kind', rhymes: true };
+poem.name; // string
+poem.pages; // number | undefined
+poem.rhymes; // booleans | undefined
+
+/***********************************************************/
+
+/***********************************/
+/*** Explicit Object-Type Unions ***/
+/***********************************/
+
+/***********************************************************/
+type PoemWithPages = {
   name: string;
-};
-type Writing = {
   pages: number;
+};
+type PoemWithRhymes = {
   name: string;
+  rhymes: boolean;
 };
-type WrittenArt = Artwork & Writing;
-// Equivalent to:
-// {
-// genre: string;
-// name: string;
-// pages: number;
-// }
+type Poem3 = PoemWithPages | PoemWithRhymes;
+const poem3: Poem3 =
+  Math.random() > 0.5
+    ? { name: 'The Double Image', pages: 7 }
+    : { name: 'Her Kind', rhymes: true };
+poem3.name; // Ok
+// Error
+// // poem3.pages;
+// Error
+// // poem3.rhymes;
 
-type ShortPoem = { author: string } & (
-  | { kigo: string; type: 'haiku' }
-  | { meter: number; type: 'villanelle' }
-);
-// Ok
-const morningGlory: ShortPoem = {
-  author: 'Fukuda Chiyo-ni',
-  kigo: 'Morning Glory',
-  type: 'haiku',
+/***********************************************************/
+
+/******************************/
+/*** Narrowing Object Types ***/
+/******************************/
+
+/***********************************************************/
+if ('pages' in poem3) {
+  poem3.pages; // Ok: poem is narrowed to PoemWithPages
+} else {
+  poem3.rhymes; // Ok: poem is narrowed to PoemWithRhymes
+}
+// Error
+// // if (poem3.pages) {...}
+
+/***********************************************************/
+
+/****************************/
+/*** Discriminated Unions ***/
+/****************************/
+
+/***********************************************************/
+type PoemWithPages1 = {
+  name: string;
+  pages: number;
+  type: 'pages';
 };
-// const oneArt: ShortPoem = {
-//   author: 'Elizabeth Bishop',
-//   type: 'villanelle',
-// };
-// // Error: Type '{ author: string; type: "villanelle"; }'
-// // is not assignable to type 'ShortPoem'.
-// // Type '{ author: string; type: "villanelle"; }' is not assignable to
-// // type '{ author: string; } & { meter: number; type: "villanelle"; }'.
-// // Property 'meter' is missing in type '{ author: string; type: "villanelle"; }'
-// // but required in type '{ meter: number; type: "villanelle"; }'.
+type PoemWithRhymes1 = {
+  name: string;
+  rhymes: boolean;
+  type: 'rhymes';
+};
+type Poem4 = PoemWithPages1 | PoemWithRhymes1;
+const poem4: Poem4 =
+  Math.random() > 0.5
+    ? { name: 'The Double Image', pages: 7, type: 'pages' }
+    : { name: 'Her Kind', rhymes: true, type: 'rhymes' };
+if (poem4.type === 'pages') {
+  console.log(`It's got pages: ${poem4.pages}`); // Ok
+} else {
+  console.log(`It rhymes: ${poem4.rhymes}`);
+}
+poem4.type; // Type: 'pages' | 'rhymes'
+poem.pages;
 
-/*
-Dangers of Intersection Types
-Long assignability errors
-*/
-type ShortPoemBase = { author: string };
-type Haiku = ShortPoemBase & { kigo: string; type: 'haiku' };
-type Villanelle = ShortPoemBase & { meter: number; type: 'villanelle' };
-type ShortPoem1 = Haiku | Villanelle;
-// const oneArt: ShortPoem1 = {
-//   author: 'Elizabeth Bishop',
-//   type: 'villanelle',
-// };
-// Type '{ author: string; type: "villanelle"; }'
-// is not assignable to type 'ShortPoem'.
-// Type '{ author: string; type: "villanelle"; }'
-// is not assignable to type 'Villanelle'.
-// Property 'meter' is missing in type
-// '{ author: string; type: "villanelle"; }'
-// but required in type '{ meter: number; type: "villanelle"; }'.
-/*
-    never
-*/
-type NotPossible = number & string;
-// Type: never
+/***********************************************************/

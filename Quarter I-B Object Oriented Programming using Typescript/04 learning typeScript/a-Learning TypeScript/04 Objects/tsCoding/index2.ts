@@ -1,92 +1,173 @@
-// *** Objects *** //
-
-//// *** Unions of Object Types *** ////
-
 /*
-    Inferred Object-Type Unions
+    Chapter 4. Objects
 */
-const poem =
-  Math.random() > 0.5
-    ? { name: 'The Double Image', pages: 7 }
-    : { name: 'Her Kind', rhymes: true };
-// Type:
-// {
-// name: string;
-// pages: number;
-// rhymes?: undefined;
-// }
-// |
-// {
-// name: string;
-// pages?: undefined;
-// rhymes: boolean;
-// }
-poem.name; // string
-poem.pages; // number | undefined
-poem.rhymes; // booleans | undefined
 
-/*
-    Explicit Object-Type Unions
-*/
-type PoemWithPages = {
+/***********************************************************/
+
+/*-----------------------*/
+/*-- Structural Typing --*/
+/*-----------------------*/
+
+/***********************************************************/
+type WithFirstName = {
+  firstName: string;
+};
+type WithLastName = {
+  lastName: string;
+};
+const hasBoth = {
+  firstName: 'Lucille',
+  lastName: 'Clifton',
+};
+// Ok: `hasBoth` contains a `firstName` property of type `string`
+let withFirstName: WithFirstName = hasBoth;
+// Ok: `hasBoth` contains a `lastName` property of type `string`
+let withLastName: WithLastName = hasBoth;
+//
+console.log(hasBoth);
+console.log(withFirstName);
+console.log(withLastName);
+
+/***********************************************************/
+
+/**********************/
+/*** Usage Checking ***/
+/**********************/
+
+/***********************************************************/
+type FirstAndLastNames = {
+  first: string;
+  last: string;
+};
+// Ok
+const hasBoth1: FirstAndLastNames = {
+  first: 'Sarojini',
+  last: 'Naidu',
+};
+// Error
+// // const hasOnlyOne: FirstAndLastNames = {
+// //   first: 'Sappho',
+// // };
+
+/***********************************************************/
+type TimeRange = {
+  start: Date;
+};
+// Error
+// // const hasStartString: TimeRange = {
+// //   start: '1879-02-13',
+// //   // Error: Type 'string' is not assignable to type 'Date'.
+// // };
+
+/***********************************************************/
+
+/********************************/
+/*** Excess Property Checking ***/
+/********************************/
+
+/***********************************************************/
+type Poet1 = {
+  born: number;
   name: string;
+};
+// Ok: all fields match what's expected in Poet
+const poetMatch: Poet1 = {
+  born: 1928,
+  name: 'Maya Angelou',
+};
+// Error Extra Property
+// // const extraProperty: Poet1 = {
+// //   activity: 'walking',
+// //   born: 1935,
+// //   name: 'Mary Oliver',
+// // };
+
+/***********************************************************/
+const existingObject = {
+  activity: 'walking',
+  born: 1935,
+  name: 'Mary Oliver',
+};
+const extraPropertyButOk: Poet1 = existingObject; // Ok
+
+/***********************************************************/
+
+/***************************/
+/*** Nested Object Types ***/
+/***************************/
+
+/***********************************************************/
+type Poem = {
+  author: {
+    firstName: string;
+    lastName: string;
+  };
+  name: string;
+};
+// Ok
+const poemMatch: Poem = {
+  author: {
+    firstName: 'Sylvia',
+    lastName: 'Plath',
+  },
+  name: 'Lady Lazarus',
+};
+// Error
+// // const poemMismatch: Poem = {
+// //   author: {
+// //     name: 'Sylvia Plath',
+// //   },
+// //   name: 'Tulips',
+// // };
+
+/***********************************************************/
+type Author = {
+  firstName: string;
+  lastName: string;
+};
+type Poem1 = {
+  author: Author;
+  name: string;
+};
+// Error
+// // const poemMismatch: Poem1 = {
+// //   author: {
+// //     name: 'Sylvia Plath',
+// //   },
+// //   name: 'Tulips',
+// // };
+
+/***********************************************************/
+
+/***************************/
+/*** Optional Properties ***/
+/***************************/
+
+/***********************************************************/
+type Book = {
+  author?: string;
   pages: number;
 };
-type PoemWithRhymes = {
-  name: string;
-  rhymes: boolean;
+// Ok
+const ok: Book = {
+  author: 'Rita Dove',
+  pages: 80,
 };
-type Poem2 = PoemWithPages | PoemWithRhymes;
-const poem2: Poem2 =
-  Math.random() > 0.5
-    ? { name: 'The Double Image', pages: 7 }
-    : { name: 'Her Kind', rhymes: true };
-poem2.name; // Ok
-// poem2.pages;
-// ~~~~~
-// Property 'pages' does not exist on type 'Poem'.
-// Property 'pages' does not exist on type 'PoemWithRhymes'.
-// poem2.rhymes;
-// ~~~~~~
-// Property 'rhymes' does not exist on type 'Poem'.
-// Property 'rhymes' does not exist on type 'PoemWithPages'.
+// Error
+// // const missing: Book = {
+// //   author: 'Rita Dove',
+// // };
 
-/* 
-    Narrowing Object Types
-*/
-if ('pages' in poem2) {
-  poem2.pages; // Ok: poem is narrowed to PoemWithPages
-} else {
-  poem2.rhymes; // Ok: poem is narrowed to PoemWithRhymes
-}
-// if (poem2.pages) {
-// }
+/***********************************************************/
+type Writers = {
+  author: string | undefined;
+  editor?: string;
+};
+// Ok: author is provided as undefined
+const hasRequired: Writers = {
+  author: undefined,
+};
+// Error
+// // const missingRequired: Writers = {};
 
-/* 
-    Discriminated Unions
-*/
-type PoemWithPages101 = {
-  name: string;
-  pages: number;
-  type: 'pages';
-};
-type PoemWithRhymes101 = {
-  name: string;
-  rhymes: boolean;
-  type: 'rhymes';
-};
-type Poem101 = PoemWithPages101 | PoemWithRhymes101;
-const poem101: Poem101 =
-  Math.random() > 0.5
-    ? { name: 'The Double Image', pages: 7, type: 'pages' }
-    : { name: 'Her Kind', rhymes: true, type: 'rhymes' };
-if (poem101.type === 'pages') {
-  console.log(`It's got pages: ${poem.pages}`); // Ok
-} else {
-  console.log(`It rhymes: ${poem.rhymes}`);
-}
-poem101.type; // Type: 'pages' | 'rhymes'
-// poem101.pages;
-// ~~~~~
-// Error: Property 'pages' does not exist on type 'Poem'.
-// Property 'pages' does not exist on type 'PoemWithRhymes'.
+/***********************************************************/
