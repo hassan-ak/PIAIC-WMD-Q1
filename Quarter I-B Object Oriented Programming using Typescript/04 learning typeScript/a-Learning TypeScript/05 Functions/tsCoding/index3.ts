@@ -1,27 +1,94 @@
 /*
-    Chapter 5. Functions
-    Function Parameters
+    # Chapter 5. Functions
 */
-// Optional Parameters
 
-function announceSong(song: string, singer?: string) {
-  console.log(`Song: ${song}`);
-  if (singer) {
-    console.log(`Singer: ${singer}`);
+/***********************************************************/
+
+/*--------------------*/
+/*-- Function Types --*/
+/*--------------------*/
+
+/***********************************************************/
+let nothingInGivesString: () => string;
+
+/***********************************************************/
+let inputAndOutput: (songs: string[], count?: number) => number;
+
+/***********************************************************/
+const songs = ['Juice', 'Shake It Off', "What's Up"];
+function runOnSongs(getSongAt: (index: number) => string) {
+  for (let i = 0; i < songs.length; i += 1) {
+    console.log(getSongAt(i));
   }
 }
-announceSong('Greensleeves'); // Ok
-announceSong('Greensleeves', undefined); // Ok
-announceSong('Chandelier', 'Sia'); // Ok
-
-function announceSongBy(song: string, singer: string | undefined) {
-  /* ... */
+function getSongAt(index: number) {
+  return `${songs[index]}`;
 }
-// announceSongBy("Greensleeves");
-// Error: Expected 2 arguments, but got 1.
-announceSongBy('Greensleeves', undefined); // Ok
-announceSongBy('Chandelier', 'Sia'); // Ok
+// Ok
+runOnSongs(getSongAt);
+function logSong(song: string) {
+  return `${song}`;
+}
+// Error
+// // runOnSongs(logSong);
 
-// function announceSinger(singer?: string, song: string) {}
-// ~~~~
-// Error: A required parameter cannot follow an optional parameter.
+/***********************************************************/
+
+/*********************************/
+/*** Function Type Parentheses ***/
+/*********************************/
+
+/***********************************************************/
+// Type is a function that returns a union: string | undefined
+let returnsStringOrUndefined: () => string | undefined;
+
+/***********************************************************/
+// Type is either undefined or a function that returns a string
+let maybeReturnsString: (() => string) | undefined;
+
+/***********************************************************/
+
+/*********************************/
+/*** Parameter Type Inferences ***/
+/*********************************/
+
+/***********************************************************/
+let singer: (song: string) => string;
+singer = function (song) {
+  // Type of song: string
+  return `Singing: ${song.toUpperCase()}!`; // Ok
+};
+
+/***********************************************************/
+const songs1 = ['Call Me', 1, 'The Chain'];
+songs1.forEach((song, index) => {
+  console.log(`${song} is at index ${index}`);
+});
+
+/***********************************************************/
+
+/*****************************/
+/*** Function Type Aliases ***/
+/*****************************/
+
+/***********************************************************/
+type StringToNumber = (input: string) => number;
+let stringToNumber: StringToNumber;
+// Ok
+stringToNumber = (input) => input.length;
+// Error
+// // stringToNumber = (input) => input.toUpperCase();
+
+/***********************************************************/
+type NumberToString = (input: number) => string;
+function usesNumberToString(numberToString: NumberToString) {
+  console.log(`The string is: ${numberToString(1234)}`);
+}
+// Ok
+usesNumberToString((input) => `${input}! Hooray!`);
+// Error
+// // usesNumberToString((input) => input * 2);
+
+/***********************************************************/
+
+export {};

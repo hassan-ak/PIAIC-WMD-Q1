@@ -1,19 +1,58 @@
 /*
-    Chapter 5. Functions
-    Function Parameters
+    # Chapter 5. Functions
 */
-// Required Parameters
 
-function singTwo(first: string, second: string) {
-  console.log(`${first} / ${second}`);
+/***********************************************************/
+
+/*------------------*/
+/*-- Return Types --*/
+/*------------------*/
+
+/***********************************************************/
+function singSongs(songs: string[]) {
+  for (const song of songs) {
+    console.log(`${song}`);
+  }
+  return songs.length;
 }
-// Logs: "Ball and Chain / undefined"
-// singTwo('Ball and Chain');
-// ~~~~~~~~~~~~~~~~
-// Error: Expected 2 arguments, but got 1.
-// Logs: "I Will Survive / Higher Love"
-singTwo('I Will Survive', 'Higher Love'); // Ok
-// Logs: "Go Your Own Way / The Chain"
-// singTwo('Go Your Own Way', 'The Chain', 'Dreams');
-// ~~~~~~~~
-// Error: Expected 2 arguments, but got 3.
+
+/***********************************************************/
+function getSongAt(songs: string[], index: number) {
+  return index < songs.length ? songs[index] : undefined;
+}
+
+/***********************************************************/
+
+/*****************************/
+/*** Explicit Return Types ***/
+/*****************************/
+
+/***********************************************************/
+function singSongsRecursive(songs: string[], count = 0): number {
+  return songs.length ? singSongsRecursive(songs.slice(1), count + 1) : count;
+}
+
+/***********************************************************/
+const singSongsRecursive1 = (songs: string[], count = 0): number =>
+  songs.length ? singSongsRecursive(songs.slice(1), count + 1) : count;
+
+/***********************************************************/
+function getSongRecordingDate(song: string): Date | undefined {
+  switch (song) {
+    case 'Strange Fruit':
+      // Ok
+      return new Date('April 20, 1939');
+    case 'Greensleeves':
+    // Error
+    // //  return 'unknown';
+    default:
+      // Ok
+      return undefined;
+  }
+}
+
+/***********************************************************/
+/***********************************************************/
+/***********************************************************/
+
+export {};

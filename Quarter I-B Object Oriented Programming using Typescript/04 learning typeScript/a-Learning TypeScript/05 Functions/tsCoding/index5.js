@@ -1,17 +1,19 @@
 "use strict";
 /*
-    Chapter 5. Functions
-    Function Parameters
+    # Chapter 5. Functions
 */
-// Rest Parameters
-function singAllTheSongs(singer, ...songs) {
-    for (const song of songs) {
-        console.log(`${song}, by ${singer}`);
-    }
+Object.defineProperty(exports, "__esModule", { value: true });
+function createDate(monthOrTimestamp, day, year) {
+    return day === undefined || year === undefined
+        ? new Date(monthOrTimestamp)
+        : new Date(year, monthOrTimestamp, day);
 }
-singAllTheSongs('Alicia Keys'); // Ok
-singAllTheSongs('Lady Gaga', 'Bad Romance', 'Just Dance', 'Poker Face'); // Ok
-// singAllTheSongs('Ella Fitzgerald', 2000);
-// ~~~~
-// Error: Argument of type 'number' is not
-// assignable to parameter of type 'string'.
+// Ok
+createDate(554356800);
+// Ok
+createDate(7, 27, 1987);
+// Error
+// // function format(getData: () => string): string;
+function format(data, needle, haystack) {
+    return needle && haystack ? data.replace(needle, haystack) : data;
+}
