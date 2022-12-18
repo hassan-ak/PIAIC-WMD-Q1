@@ -1,13 +1,44 @@
 /*
-  Chapter 6. Arrays
-  Array Types
+    # Chapter 6. Arrays
 */
+/***********************************************************/
 
-// Union-Type Arrays
+/*-------------------------*/
+/*-- Spreads and Rests s --*/
+/*-------------------------*/
 
-// Type is either a number or an array of strings
-let stringOrArrayOfNumbers: string | number[];
-// Type is an array of elements that are each either a number or a string
-let arrayOfStringOrNumbers: (string | number)[];
-// Type is (string | undefined)[]
-const namesMaybe = ['Aqualtune', 'Blenda', undefined];
+/***********************************************************/
+
+/***************/
+/*** Spreads ***/
+/***************/
+
+/***********************************************************/
+// Type: string[]
+const soldiers = ['Harriet Tubman', 'Joan of Arc', 'Khutulun'];
+// Type: number[]
+const soldierAges = [90, 19, 45];
+// Type: (string | number)[]
+const conjoined = [...soldiers, ...soldierAges];
+
+/***********************************************************/
+
+/*********************************/
+/*** Spreading Rest Parameters ***/
+/*********************************/
+
+/***********************************************************/
+function logWarriors(greeting: string, ...names: string[]) {
+  for (const name of names) {
+    console.log(`${greeting}, ${name}!`);
+  }
+}
+const warriors = ['Cathay Williams', 'Lozen', 'Nzinga'];
+logWarriors('Hello', ...warriors);
+const birthYears = [1844, 1840, 1583];
+// Error
+// // logWarriors('Born in', ...birthYears);
+
+/***********************************************************/
+
+export {};
