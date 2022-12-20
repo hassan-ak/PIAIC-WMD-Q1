@@ -1,3 +1,0 @@
-# TypeScript
-
-## Private Class Modifier
