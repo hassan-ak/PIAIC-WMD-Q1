@@ -1,6 +1,13 @@
 "use strict";
-//protected keyword allows subclasses to gain visibility into the parent class without
-// exposing this API to other parts of the code.
+/*****************************************/
+/*** step16_classes_protected_modifier ***/
+/*****************************************/
+Object.defineProperty(exports, "__esModule", { value: true });
+/************************************************/
+//---
+// protected keyword allows subclasses to gain visibility into the
+// parent class without exposing this API to other parts of the code.
+//---
 class ListString {
     constructor() {
         this.contents = [];
@@ -9,6 +16,7 @@ class ListString {
         this.contents[index] = item;
     }
 }
+//---
 class StackString extends ListString {
     constructor() {
         super();
@@ -19,5 +27,5 @@ class StackString extends ListString {
         this.currentIndex++;
     }
 }
+//---
 var stack = new StackString();
-//stack.setElement(0, 1); // error 'setElement' is protected and only visible to subclasses
