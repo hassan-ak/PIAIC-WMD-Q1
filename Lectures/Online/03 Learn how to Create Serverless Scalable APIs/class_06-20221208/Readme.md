@@ -1,6 +1,6 @@
 # Learn how to Create Serverless Scalable APIs
 
-## Class 05 - 2022/12/01
+## Class 06 - 2022/12/08
 
 ## Content
 
