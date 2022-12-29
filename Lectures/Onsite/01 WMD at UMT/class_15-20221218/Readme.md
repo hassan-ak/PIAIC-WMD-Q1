@@ -4,4 +4,3 @@
 
 1. [Learn Typescript by Panaverse](https://github.com/panaverse/learn-typescript)
    - Step 11
-2. [Student Management System](https://github.com/hassan-ak/wmd-ts-student-management-system)
