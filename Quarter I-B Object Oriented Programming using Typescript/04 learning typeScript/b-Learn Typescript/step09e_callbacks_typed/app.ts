@@ -1,4 +1,4 @@
-// step09f_callbacks_typed
+// step09e_callbacks_typed
 
 /************************************************************/
 function myCallBack(text: string) {

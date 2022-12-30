@@ -1,6 +1,6 @@
 # TypeScript
 
-## step14_classes_private_modifier
+## step14 Classes Private Modifier
 
 - https://www.typescriptlang.org/docs/handbook/2/classes.html#member-visibility
 - https://www.typescriptlang.org/docs/handbook/2/classes.html#private

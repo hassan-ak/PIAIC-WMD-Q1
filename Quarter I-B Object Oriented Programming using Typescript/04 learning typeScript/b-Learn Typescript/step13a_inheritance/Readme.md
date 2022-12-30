@@ -1,5 +1,5 @@
 # TypeScript
 
-## step13a_inheritance
+## step13a Inheritance
 
 - https://www.typescriptlang.org/docs/handbook/2/classes.html#class-heritage

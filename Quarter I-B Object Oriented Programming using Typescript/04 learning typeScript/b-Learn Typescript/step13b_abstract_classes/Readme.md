@@ -1,5 +1,5 @@
 # TypeScript
 
-## step13b_abstract_classes
+## step13b Abstract Classes
 
 - https://www.typescriptlang.org/docs/handbook/2/classes.html#abstract-classes-and-members

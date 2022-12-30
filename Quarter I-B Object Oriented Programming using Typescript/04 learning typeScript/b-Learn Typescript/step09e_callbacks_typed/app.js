@@ -1,5 +1,5 @@
 "use strict";
-// step09f_callbacks_typed
+// step09e_callbacks_typed
 /************************************************************/
 function myCallBack(text) {
     console.log('inside myCallback ' + text);

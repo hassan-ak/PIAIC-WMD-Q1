@@ -1,6 +1,6 @@
 # TypeScript
 
-## step12c_typing_confusion
+## step12c Typing Confusion
 
 - https://github.com/microsoft/TypeScript/issues/5303
 - microsoft/TypeScript#5303

@@ -1,6 +1,6 @@
 # TypeScript
 
-## step12b_class_structural_typing
+## step12b Class Structural Typing
 
 - https://www.typescriptlang.org/docs/handbook/type-compatibility.html
 - http://www.typescriptlang.org/Handbook#classes-classes

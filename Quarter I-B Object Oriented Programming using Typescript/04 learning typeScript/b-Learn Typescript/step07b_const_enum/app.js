@@ -1,4 +1,5 @@
 "use strict";
+// step07b_const_enum
 let directions = [
     0 /* Direction.Up */,
     1 /* Direction.Down */,

@@ -1,6 +1,6 @@
 # TypeScript
 
-## step12a_class_structural_typing_question
+## step12a Class Structural Typing Question
 
 - https://www.typescriptlang.org/docs/handbook/type-compatibility.html
 - http://www.typescriptlang.org/Handbook#classes-classes

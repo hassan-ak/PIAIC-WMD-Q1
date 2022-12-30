@@ -1,7 +1,7 @@
 {
-  "name": "step10_tuples",
+  "name": "step17_accessors",
   "version": "1.0.0",
-  "description": "",
+  "description": "- https://www.typescriptlang.org/docs/handbook/2/classes.html#getters--setters",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

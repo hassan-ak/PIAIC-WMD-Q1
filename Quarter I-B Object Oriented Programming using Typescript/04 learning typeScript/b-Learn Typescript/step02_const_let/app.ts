@@ -1,4 +1,4 @@
-// Step-02 Variable Declaration
+// step02 Const Let
 
 //use const where variable values do not change
 const a = 5;

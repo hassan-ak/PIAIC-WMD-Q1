@@ -1,6 +1,6 @@
 # TypeScript
 
-## step15_nominal_types
+## step15 Nominal Types
 
 - http://en.wikipedia.org/wiki/Nominative_and_structural_type_systems
 - https://michalzalecki.com/nominal-typing-in-typescript/

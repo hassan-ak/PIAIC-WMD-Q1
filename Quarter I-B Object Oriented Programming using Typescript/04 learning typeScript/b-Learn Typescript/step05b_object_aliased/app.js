@@ -1,18 +1,20 @@
+"use strict";
+// step05b_object_aliased
 /*-------------------------------------------------------------------*/
 // anonymous
-var teacher = {
+let teacher = {
     name: 'Zeeshan',
-    exp: 10
+    exp: 10,
 };
-var student = {
+let student = {
     name: 'Hira',
-    age: 30
+    age: 30,
 };
 console.log(student['name']);
 console.log(student.age);
-var xx = { x: 100, y: 100 };
-var storeManager = {
-    name: 'Bilal'
+let xx = { x: 100, y: 100 };
+let storeManager = {
+    name: 'Bilal',
 };
-var yy = { x: 100, y: 100 };
+let yy = { x: 100, y: 100 };
 /*-------------------------------------------------------------------*/

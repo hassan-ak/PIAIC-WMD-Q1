@@ -1,6 +1,6 @@
 # TypeScript
 
-## Step-00a JSON ( Javascript Object Notation )
+## step00a JSON Objects ( Javascript Object Notation )
 
 1.  JSON stands for Javascript Object Notation.
 2.  JSON is a text-based data format that is used to store and transfer data.

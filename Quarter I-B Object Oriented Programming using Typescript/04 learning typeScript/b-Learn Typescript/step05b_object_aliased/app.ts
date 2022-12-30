@@ -1,3 +1,5 @@
+// step05b_object_aliased
+
 /*-------------------------------------------------------------------*/
 // anonymous
 let teacher: { name: string; exp: number } = {

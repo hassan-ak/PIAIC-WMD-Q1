@@ -1,4 +1,4 @@
-// step09e_function_rest_parameter
+// step09d_function_rest_parameter
 
 /*******************************************************/
 function buildName(firstName: string, ...restOfName: string[]) {
