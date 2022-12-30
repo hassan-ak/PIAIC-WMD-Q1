@@ -1,3 +1,0 @@
-# TypeScript
-
-## Interfaces Array types
