@@ -1,4 +1,8 @@
 "use strict";
+/**********************************************/
+/*** step19b_interfaces_optional_properties ***/
+/**********************************************/
+Object.defineProperty(exports, "__esModule", { value: true });
 function createSquare(config) {
     var newSquare = { color: 'white', area: 100 };
     if (config.color) {
@@ -11,5 +15,3 @@ function createSquare(config) {
 }
 var mySquare = createSquare({ color: 'black' });
 console.log(mySquare.area);
-//The advantage of optional properties is that you can describe these possibly available properties
-//while still also catching properties that you know are not expected to be available.
