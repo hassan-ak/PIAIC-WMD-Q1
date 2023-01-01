@@ -1,25 +1,42 @@
 /*
-    Chapter 8. Classes
-    Class Properties
+    # Chapter 8. Classes
 */
-//  Function Properties
+/***********************************************************/
 
-class WithMethod {
-  myMethod() {}
-}
-new WithMethod().myMethod === new WithMethod().myMethod; // true
+/*----------------------*/
+/*-- Classes as Types --*/
+/*----------------------*/
 
-class WithProperty {
-  myProperty: (() => {}) | undefined;
+/***********************************************************/
+class Teacher {
+  sayHello() {
+    console.log('Take chances, make mistakes, get messy!');
+  }
 }
-new WithProperty().myProperty === new WithProperty().myProperty; // false
+let teacher: Teacher;
+teacher = new Teacher(); // Ok
+// Error
+// teacher = 'Wahoo!';
 
-class WithPropertyParameters {
-  takesParameters = (input: boolean) => (input ? 'Yes' : 'No');
+/***********************************************************/
+class SchoolBus {
+  getAbilities() {
+    return ['magic', 'shapeshifting'];
+  }
 }
-const instance = new WithPropertyParameters();
-instance.takesParameters(true); // Ok
-// instance.takesParameters(123);
-// ~~~
-// Error: Argument of type 'number' is not
-// assignable to parameter of type 'boolean'.
+function withSchoolBus(bus: SchoolBus) {
+  console.log(bus.getAbilities());
+}
+withSchoolBus(new SchoolBus()); // Ok
+// Ok
+withSchoolBus({
+  getAbilities: () => ['transmogrification'],
+});
+// Error
+// withSchoolBus({
+//   getAbilities: () => 123,
+// });
+
+/***********************************************************/
+
+export {};
