@@ -4,12 +4,4 @@
 
 1. [Learn Typescript by Panaverse](https://github.com/panaverse/learn-typescript)
    - Step 12 - 18
-
-- figma
-- react
-- nextjs
-- chakra
-- css tailwind
-- headless cms
-- varcel
-- taraform cdk
+2. [Currency Converter](https://github.com/hassan-ak/wmd-ts-currency-converter)
