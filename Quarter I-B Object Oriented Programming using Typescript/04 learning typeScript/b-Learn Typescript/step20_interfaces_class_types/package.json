@@ -1,0 +1,12 @@
+{
+  "name": "step20_interfaces_class_types",
+  "version": "1.0.0",
+  "description": "- http://www.typescriptlang.org/Handbook#interfaces-array-types\r - https://github.com/Microsoft/TypeScript/wiki/Interfaces\r - http://blogs.msdn.com/b/typescript/archive/2013/01/24/interfaces-walkthrough.aspx",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

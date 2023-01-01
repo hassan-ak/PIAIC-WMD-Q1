@@ -1,3 +1,0 @@
-# TypeScript
-
-## Interfaces Class Types

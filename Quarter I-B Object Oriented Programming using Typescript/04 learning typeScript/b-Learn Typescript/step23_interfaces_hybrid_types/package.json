@@ -1,0 +1,12 @@
+{
+  "name": "step23_interfaces_hybrid_types",
+  "version": "1.0.0",
+  "description": "- http://www.typescriptlang.org/Handbook#interfaces-hybrid-types",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,3 +1,0 @@
-# TypeScript
-
-## Classes as Interfaces
