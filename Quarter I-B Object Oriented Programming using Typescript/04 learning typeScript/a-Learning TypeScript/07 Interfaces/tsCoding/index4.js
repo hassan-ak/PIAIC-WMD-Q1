@@ -1,14 +1,6 @@
 "use strict";
 /*
-    Chapter 7. Interfaces
-    Types of Properties
+    # Chapter 7. Interfaces
 */
-//   Read-Only Properties
-const hasBoth = {
-    property: () => '',
-    method() {
-        return '';
-    },
-};
-hasBoth.property(); // Ok
-hasBoth.method(); // Ok
+/***********************************************************/
+Object.defineProperty(exports, "__esModule", { value: true });

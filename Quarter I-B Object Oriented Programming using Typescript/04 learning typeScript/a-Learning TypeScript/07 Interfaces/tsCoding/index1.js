@@ -1,18 +1,11 @@
 "use strict";
 /*
-    Chapter 7. Interfaces
-    Type Aliases Versus Interfaces
+    # Chapter 7. Interfaces
 */
+/***********************************************************/
+Object.defineProperty(exports, "__esModule", { value: true });
 let valueLater;
-// Ok
 valueLater = {
     born: 1935,
     name: 'Sara Teasdale',
 };
-// valueLater = 'Emily Dickinson';
-// Error: Type 'string' is not assignable to 'Poet1'.
-// valueLater = {
-//   //   born: true,
-//   // Error: Type 'boolean' is not assignable to type 'number'.
-//   name: 'Sappho',
-// };
