@@ -1,22 +1,27 @@
 "use strict";
 /*
-    Chapter 7. Interfaces
-    Types of Properties
+    # Chapter 7. Interfaces
 */
-//   Read-Only Properties
-function read(page) {
-    // Ok: reading the text property doesn't attempt to modify it
-    console.log(page.text);
-    //   page.text += '!';
-    // ~~~~
-    // Error: Cannot assign to 'text'
-    // because it is a read-only property.
-    const pageIsh = {
-        text: 'Hello, world!',
-    };
-    // Ok: messengerIsh is an inferred object type with text, not a Page
-    //   page.text += '!';
-    // Ok: read takes in Page, which happens to
-    // be a more specific version of pageIsh's type
+/***********************************************************/
+Object.defineProperty(exports, "__esModule", { value: true });
+// Ok
+let myNovella = {
+    pages: 195,
+    title: 'Ethan Frome',
+};
+// Error
+// let missingPages: Novella = {
+// title: "The Awakening",
+// }
+let extraProperty = {
+    pages: 300,
+    // Error
+    // strategy: "baseline",
+    // style: "Naturalism"
+    title: '',
+};
+function useGivesBoth(instance) {
+    instance.giveEither(); // Type: number | string
+    instance.giveNumber(); // Type: number
+    instance.giveString(); // Type: string
 }
-// read(messengerIsh);

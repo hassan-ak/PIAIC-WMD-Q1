@@ -1,26 +1,76 @@
 /*
-    Chapter 7. Interfaces
-    Types of Properties
+    # Chapter 7. Interfaces
 */
-//   Read-Only Properties
+/***********************************************************/
 
-interface Page {
-  readonly text: string;
-}
-function read(page: Page) {
-  // Ok: reading the text property doesn't attempt to modify it
-  console.log(page.text);
-  //   page.text += '!';
-  // ~~~~
-  // Error: Cannot assign to 'text'
-  // because it is a read-only property.
-  const pageIsh = {
-    text: 'Hello, world!',
-  };
-  // Ok: messengerIsh is an inferred object type with text, not a Page
-  //   page.text += '!';
-  // Ok: read takes in Page, which happens to
-  // be a more specific version of pageIsh's type
+/*--------------------------*/
+/*-- Interface Extensions --*/
+/*--------------------------*/
+
+/***********************************************************/
+interface Writing {
+  title: string;
 }
 
-// read(messengerIsh);
+interface Novella extends Writing {
+  pages: number;
+}
+// Ok
+let myNovella: Novella = {
+  pages: 195,
+  title: 'Ethan Frome',
+};
+// Error
+// let missingPages: Novella = {
+// title: "The Awakening",
+// }
+let extraProperty: Novella = {
+  pages: 300,
+  // Error
+  // strategy: "baseline",
+  // style: "Naturalism"
+  title: '',
+};
+
+/***********************************************************/
+
+/*****************************/
+/*** Overridden Properties ***/
+/*****************************/
+
+/***********************************************************/
+interface WithNullableName {
+  name: string | null;
+}
+interface WithNonNullableName extends WithNullableName {
+  name: string;
+}
+// Error
+// interface WithNumericName extends WithNullableName {
+// name: number | string;
+// }
+
+/***********************************************************/
+
+/*************************************/
+/*** Extending Multiple Interfaces ***/
+/*************************************/
+
+/***********************************************************/
+interface GivesNumber {
+  giveNumber(): number;
+}
+interface GivesString {
+  giveString(): string;
+}
+interface GivesBothAndEither extends GivesNumber, GivesString {
+  giveEither(): number | string;
+}
+function useGivesBoth(instance: GivesBothAndEither) {
+  instance.giveEither(); // Type: number | string
+  instance.giveNumber(); // Type: number
+  instance.giveString(); // Type: string
+}
+
+/***********************************************************/
+export {};
