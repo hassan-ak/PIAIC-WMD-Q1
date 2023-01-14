@@ -1,21 +1,57 @@
 "use strict";
 /*
-    Chapter 9. Type Modifiers
-    Top Types
+    # Chapter 9. Type Modifiers
 */
-// unknown
-function greetComedian1(name) {
-    //   console.log(`Announcing ${name.toUpperCase()}!`);
-    // ~~~~
-    // Error: Object is of type 'unknown'.
+Object.defineProperty(exports, "__esModule", { value: true });
+/***********************************************************/
+/*---------------------*/
+/*-- Type Predicates --*/
+/*---------------------*/
+/***********************************************************/
+function isNumberOrString(value) {
+    return ['number', 'string'].includes(typeof value);
 }
-function greetComedianSafety(name) {
-    if (typeof name === 'string') {
-        console.log(`Announcing ${name.toUpperCase()}!`); // Ok
+function logValueIfExists(value) {
+    if (isNumberOrString(value)) {
+        // Error
+        // value.toString();
     }
     else {
-        console.log("Well, I'm off.");
+        console.log('Value does not exist:', value);
     }
 }
-greetComedianSafety('Betty White'); // Logs: 4
-greetComedianSafety({}); // Does not log
+/***********************************************************/
+function isNumberOrString1(value) {
+    return ['number', 'string'].includes(typeof value);
+}
+function logValueIfExists1(value) {
+    if (isNumberOrString1(value)) {
+        value.toString(); // Ok
+    }
+    else {
+        console.log('value does not exist:', value);
+    }
+}
+function isStandupComedian(value) {
+    return 'routine' in value;
+}
+function workWithComedian(value) {
+    if (isStandupComedian(value)) {
+        console.log(value.routine); // Ok
+    }
+    // // Error
+    // console.log(value.routine);
+}
+/***********************************************************/
+function isLongString(input) {
+    return !!(input && input.length >= 7);
+}
+function workWithText(text) {
+    if (isLongString(text)) {
+        console.log('Long text:', text.length);
+    }
+    else {
+        // Type of text: undefined
+        // console.log('Short text:', text?.length);
+    }
+}

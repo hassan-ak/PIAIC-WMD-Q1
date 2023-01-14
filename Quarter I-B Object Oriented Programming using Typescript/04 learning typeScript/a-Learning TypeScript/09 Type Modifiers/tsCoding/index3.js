@@ -1,60 +1,56 @@
 "use strict";
 /*
-    Chapter 9. Type Modifiers
-    Type Predicates
+    # Chapter 9. Type Modifiers
 */
-function isNumberOrString(value) {
-    return ['number', 'string'].includes(typeof value);
+/***********************************************************/
+Object.defineProperty(exports, "__esModule", { value: true });
+function getRating(ratings, key) {
+    // return ratings[key];
 }
-function logValueIfExists(value) {
-    if (isNumberOrString(value)) {
-        // Type of value: number | string | null | undefined
-        // value.toString();
-        // Error: Object is possibly undefined.
-    }
-    else {
-        console.log('Value does not exist:', value);
-    }
+const ratings = { audience: 66, critics: 84 };
+getRating(ratings, 'audience'); // Ok
+getRating(ratings, 'not valid'); // Ok, but shouldn't be
+/***********************************************************/
+function getCountLiteral(ratings, key) {
+    return ratings[key]; // Ok
 }
-// function typePredicate(input: WideType): input is NarrowType;
-function isNumberOrString1(value) {
-    return ['number', 'string'].includes(typeof value);
+const ratings1 = { audience: 66, critics: 84 };
+getCountLiteral(ratings1, 'audience'); // Ok
+// getCountLiteral(ratings1, 'not valid');
+/***********************************************************/
+function getCountKeyof(ratings, key) {
+    return ratings[key]; // Ok
 }
-function logValueIfExists1(value) {
-    if (isNumberOrString1(value)) {
-        // Type of value: number | string
-        value.toString(); // Ok
-    }
-    else {
-        // Type of value: null | undefined
-        console.log('value does not exist:', value);
-    }
+const ratings2 = { audience: 66, critics: 84 };
+getCountKeyof(ratings2, 'audience'); // Ok
+// getCountKeyof(ratings2, 'not valid');
+/***********************************************************/
+/**************/
+/*** typeof ***/
+/**************/
+/***********************************************************/
+const original = {
+    medium: 'movie',
+    title: 'Mean Girls',
+};
+let adaptation;
+if (Math.random() > 0.5) {
+    adaptation = Object.assign(Object.assign({}, original), { medium: 'play' }); // Ok
 }
-function isStandupComedian(value) {
-    return 'routine' in value;
+else {
+    // Error: Type 'number' is not assignable to type 'string'.
+    // adaptation = { ...original, medium: 2 };
 }
-function workWithComedian(value) {
-    if (isStandupComedian(value)) {
-        // Type of value: StandupComedian
-        console.log(value.routine); // Ok
-    }
-    // Type of value: Comedian
-    //   console.log(value.routine);
-    // ~~~~~~~
-    // Error: Property 'routine' does not exist on type 'Comedian'.
+/***********************************************************/
+/*+++++++++++++++++++*/
+/*+++ keyof typeof ++*/
+/*+++++++++++++++++++*/
+/***********************************************************/
+const ratings101 = {
+    imdb: 8.4,
+    metacritic: 82,
+};
+function logRating(key) {
+    console.log(ratings101[key]);
 }
-function isLongString(input) {
-    return !!(input && input.length >= 7);
-}
-function workWithText(text) {
-    if (isLongString(text)) {
-        // Type of text: string
-        console.log('Long text:', text.length);
-    }
-    else {
-        // Type of text: undefined
-        // console.log('Short text:', text?.length);
-        // ~~~~~~
-        // Error: Property 'length' does not exist on type 'never'.
-    }
-}
+logRating('imdb'); // Ok

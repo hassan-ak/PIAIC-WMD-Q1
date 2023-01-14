@@ -1,69 +1,85 @@
-/* 
-    Chapter 9. Type Modifiers
-    Type Predicates
+/*
+    # Chapter 9. Type Modifiers
 */
+/***********************************************************/
 
-function isNumberOrString(value: unknown) {
-  return ['number', 'string'].includes(typeof value);
+/*--------------------*/
+/*-- Type Operators --*/
+/*--------------------*/
+
+/***********************************************************/
+
+/*************/
+/*** keyof ***/
+/*************/
+
+/***********************************************************/
+interface Ratings {
+  audience: number;
+  critics: number;
+}
+function getRating(ratings: Ratings, key: string): number | void {
+  // return ratings[key];
+}
+const ratings: Ratings = { audience: 66, critics: 84 };
+getRating(ratings, 'audience'); // Ok
+getRating(ratings, 'not valid'); // Ok, but shouldn't be
+
+/***********************************************************/
+function getCountLiteral(
+  ratings: Ratings,
+  key: 'audience' | 'critics'
+): number {
+  return ratings[key]; // Ok
+}
+const ratings1: Ratings = { audience: 66, critics: 84 };
+getCountLiteral(ratings1, 'audience'); // Ok
+// getCountLiteral(ratings1, 'not valid');
+
+/***********************************************************/
+function getCountKeyof(ratings: Ratings, key: keyof Ratings): number {
+  return ratings[key]; // Ok
+}
+const ratings2: Ratings = { audience: 66, critics: 84 };
+getCountKeyof(ratings2, 'audience'); // Ok
+// getCountKeyof(ratings2, 'not valid');
+
+/***********************************************************/
+
+/**************/
+/*** typeof ***/
+/**************/
+
+/***********************************************************/
+const original = {
+  medium: 'movie',
+  title: 'Mean Girls',
+};
+let adaptation: typeof original;
+if (Math.random() > 0.5) {
+  adaptation = { ...original, medium: 'play' }; // Ok
+} else {
+  // Error: Type 'number' is not assignable to type 'string'.
+  // adaptation = { ...original, medium: 2 };
 }
 
-function logValueIfExists(value: number | string | null | undefined) {
-  if (isNumberOrString(value)) {
-    // Type of value: number | string | null | undefined
-    // value.toString();
-    // Error: Object is possibly undefined.
-  } else {
-    console.log('Value does not exist:', value);
-  }
-}
+/***********************************************************/
 
-// function typePredicate(input: WideType): input is NarrowType;
+/*+++++++++++++++++++*/
+/*+++ keyof typeof ++*/
+/*+++++++++++++++++++*/
 
-function isNumberOrString1(value: unknown): value is number | string {
-  return ['number', 'string'].includes(typeof value);
+/***********************************************************/
+const ratings101 = {
+  imdb: 8.4,
+  metacritic: 82,
+};
+function logRating(key: keyof typeof ratings101) {
+  console.log(ratings101[key]);
 }
+logRating('imdb'); // Ok
+// logRating('invalid');
 
-function logValueIfExists1(value: number | string | null | undefined) {
-  if (isNumberOrString1(value)) {
-    // Type of value: number | string
-    value.toString(); // Ok
-  } else {
-    // Type of value: null | undefined
-    console.log('value does not exist:', value);
-  }
-}
+/***********************************************************/
 
-interface Comedian {
-  funny: boolean;
-}
-interface StandupComedian extends Comedian {
-  routine: string;
-}
-function isStandupComedian(value: Comedian): value is StandupComedian {
-  return 'routine' in value;
-}
-function workWithComedian(value: Comedian) {
-  if (isStandupComedian(value)) {
-    // Type of value: StandupComedian
-    console.log(value.routine); // Ok
-  }
-  // Type of value: Comedian
-  //   console.log(value.routine);
-  // ~~~~~~~
-  // Error: Property 'routine' does not exist on type 'Comedian'.
-}
-
-function isLongString(input: string | undefined): input is string {
-  return !!(input && input.length >= 7);
-}
-function workWithText(text: string | undefined) {
-  if (isLongString(text)) {
-    // Type of text: string
-    console.log('Long text:', text.length);
-  } else {
-    // Type of text: undefined
-    // console.log('Short text:', text?.length);
-    // ~~~~~~
-    // Error: Property 'length' does not exist on type 'never'.
-  }
-}
+export {};
