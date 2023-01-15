@@ -12,12 +12,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 require("reflect-metadata");
 function logType(target, key) {
     var t = Reflect.getMetadata('design:type', target, key);
-    console.log(`${key} type: ${t}`);
+    console.log(`${key} type: ${t.name}`);
 }
 class Demo {
-    constructor() {
-        this.attr1 = '';
-    }
 }
 __decorate([
     logType // apply property decorator
