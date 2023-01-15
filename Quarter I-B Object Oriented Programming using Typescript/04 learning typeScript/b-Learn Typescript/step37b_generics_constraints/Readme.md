@@ -1,4 +1,0 @@
-# TypeScript
-
-## Generics Constraints
-
