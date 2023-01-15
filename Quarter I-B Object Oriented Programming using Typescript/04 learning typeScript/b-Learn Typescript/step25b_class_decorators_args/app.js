@@ -1,5 +1,4 @@
-"use strict";
-///<reference path="node_modules\reflect-metadata\reflect-metadata.d.ts"/>
+// /<reference path="node_modules\reflect-metadata\reflect-metadata.d.ts"/>
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -33,9 +32,9 @@ function logClass(target: any) {
 }*/
 function logClassWithArgs(filter) {
     return (target) => {
-        // implement class decorator here, the class decorator
-        // will have access to the decorator arguments (filter)
-        // because they are  stored in a closure
+        // implement class decorator here, the class decorator 
+        // will have access to the decorator arguments (filter) 
+        // because they are  stored in a closure 
         console.log(target, filter);
     };
 }
@@ -47,9 +46,9 @@ let Person = class Person {
     }
 };
 Person = __decorate([
-    logClassWithArgs({ when: { name: 'Zeeshan' } })
+    logClassWithArgs({ when: { name: "Zeeshan" } })
 ], Person);
-var me = new Person('Zia', 'Khan');
+var me = new Person("Zia", "Khan");
 // New: Person
 console.log(me instanceof Person);
 // true
