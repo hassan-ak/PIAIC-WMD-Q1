@@ -1,0 +1,25 @@
+# Chapter 10. Generics
+
+- Generic Functions
+  - Explicit Generic Call Types
+  - Multiple Function Type Parameters
+- Generic Interfaces
+  - Inferred Generic Interface Types
+- Generic Classes
+  - Explicit Generic Class Types
+  - Extending Generic Classes
+  - Implementing Generic Interfaces
+  - Method Generics
+  - Static Class Generics
+- Generic Type Aliases
+  - Generic Discriminated Unions
+- Generic Modifiers
+  - Generic Defaults
+- Constrained Generic Types
+  - keyof and Constrained Type Parameters
+- Promises
+  - Creating Promises
+  - Async Functions
+- Using Generics Right
+  - The Golden Rule of Generics
+  - Generic Naming Conventions
