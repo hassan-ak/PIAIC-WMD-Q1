@@ -1,7 +1,7 @@
 # Web3.0 and Metaverse Development
 
-## Class 12 - 2022/12/11
+## Class 17 - 2022/12/25
 
 1. [Learn Typescript by Panaverse](https://github.com/panaverse/learn-typescript)
-   - Step 06 - 10
-2. [ATM](https://github.com/hassan-ak/wmd-ts-atm)
+   - Step 11
+2. [Countdown Timer](https://github.com/hassan-ak/wmd-ts-countdown-timer)

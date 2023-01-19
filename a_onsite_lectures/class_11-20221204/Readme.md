@@ -4,4 +4,4 @@
 
 1. [Learn Typescript by Panaverse](https://github.com/panaverse/learn-typescript)
    - Step 05
-2. [Number Guessing game](https://github.com/hassan-ak/wmd-ts-calculator)
+2. [Todo List](https://github.com/hassan-ak/wmd-ts-todo-list)
