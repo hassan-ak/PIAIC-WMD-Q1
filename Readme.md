@@ -6,11 +6,14 @@ This repository starts with basic understanding of web development using HTML an
 
 ### Table of Contents
 
-| Sr. No. | Topic                                                                                             |
-| ------- | ------------------------------------------------------------------------------------------------- |
-| 1       | [HTML and CSS](./01_html_and_css/)                                                                |
-| 2       | [Web 3.0 and Metaverse Theory ](./02_web3_and_metaverse_theory/)                                  |
-| 3       | [Fundamentals of JavaScript ](./03_fundamentals_of_javascript/)                                   |
-| 4       | [Object-Oriented Programming with TypeScript ](./04_object_oriented_programming_with_typeScript/) |
-| 5       | [TypeScript for React ](./05_typescript_for_react/)                                               |
-| 6       | [Fundamentals of Version Control with Git ](./06_fundamentals_of_version_control_with_git/)       |
+| Sr. No. | Topic                                                                                            |
+| ------- | ------------------------------------------------------------------------------------------------ |
+| 1       | [HTML and CSS](./01_html_and_css/)                                                               |
+| 2       | [Web 3.0 and Metaverse Theory](./02_web3_and_metaverse_theory/)                                  |
+| 3       | [Fundamentals of JavaScript](./03_fundamentals_of_javascript/)                                   |
+| 4       | [Object-Oriented Programming with TypeScript](./04_object_oriented_programming_with_typeScript/) |
+| 5       | [TypeScript for React](./05_typescript_for_react/)                                               |
+| 6       | [Fundamentals of Version Control with Git](./06_fundamentals_of_version_control_with_git/)       |
+| 7       | [Onsite Lectures](./a_onsite_lectures/)                                                          |
+| 8       | [Online Lectures](./b_online_lectures/)                                                          |
+| 9       | [Content Covered](./z_content_covered/)                                                          |
